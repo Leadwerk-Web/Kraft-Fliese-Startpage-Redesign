@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraft Fliesen GmbH - Fliesengeschäft zwischen Pforzheim & Karlsruhe</title>
+    <style>
+        /* 
+        ========================================
+        1. VARIABLES & RESET
+        ========================================
+        */
+        :root {
+            /* Colors */
+            --color-primary: #1a1a1a;
+            /* Dark charcoal */
+            --color-secondary: #f4f4f4;
+            /* Light grey background */
+            --color-accent: #c5a059;
+            /* Muted Gold/Bronze */
+            --color-accent-hover: #b08d4b;
+            --color-text: #333333;
+            /* Dark Grey Text */
+            --color-text-light: #666666;
+            /* Lighter Grey Text */
+            --color-white: #ffffff;
+            --color-border: #e0e0e0;
+            --color-success: #28a745;
+            /* WhatsApp Green */
+
+            /* Typography */
+            --font-main: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+            /* Spacing */
+            --container-width: 1240px;
+            --header-height: 90px;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 6rem;
+
+            /* UI Elements */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+
+            /* Transitions */
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--color-text);
+            line-height: 1.6;
+            background-color: var(--color-white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 
+        ========================================
+        2. TYPOGRAPHY
+        ========================================
+        */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--color-primary);
+            line-height: 1.25;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.5px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        .text-accent {
+            color: var(--color-accent);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .serif {
+            font-family: "Georgia", serif;
+            font-style: italic;
+        }
+
+        /* 
+        ========================================
+        3. COMPONENTS
+        ========================================
+        */
+        .container {
+            width: 90%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+
+        .btn-white {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+        }
+
+        .btn-white:hover {
+            background-color: var(--color-secondary);
+            color: var(--color-accent);
+        }
+
+        .section {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .section-grey {
+            background-color: var(--color-secondary);
+        }
+
+        .grid {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+
+        .grid-4 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-4 {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* 
+        ========================================
+        4. TOP BAR & HEADER
+        ========================================
+        */
+        .top-bar {
+            background-color: #111;
+            color: #aaa;
+            font-size: 0.8rem;
+            padding: 0.5rem 0;
+            display: none;
+            /* Mobile hidden */
+        }
+
+        @media(min-width: 992px) {
+            .top-bar {
+                display: block;
+            }
+        }
+
+        .top-bar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .top-socials a {
+            margin-left: 1rem;
+            color: #fff;
+            opacity: 0.7;
+        }
+
+        .top-socials a:hover {
+            opacity: 1;
+            color: var(--color-accent);
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid var(--color-border);
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            /* Inner container handles max-width */
+            padding: 0 var(--spacing-sm);
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-desktop {
+            display: none;
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        /* Dropdown indication */
+        .nav-item-has-children>.nav-link::after {
+            content: " ▼";
+            font-size: 0.6em;
+            vertical-align: middle;
+            opacity: 0.5;
+        }
+
+        .nav-link:hover {
+            color: var(--color-accent);
+        }
+
+        .search-icon {
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+
+        @media (min-width: 1100px) {
+            .nav-desktop {
+                display: block;
+            }
+
+            .mobile-toggle {
+                display: none;
+            }
+        }
+
+        .mobile-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--color-primary);
+            margin: 5px 0;
+        }
+
+        /* 
+        ========================================
+        5. HERO SECTION
+        ========================================
+        */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/webseite_header.png');
+            background-size: cover;
+            background-position: center;
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero h1 {
+            color: var(--color-white);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 
+        ========================================
+        6. ICON BOXES (SORTIMENT)
+        ========================================
+        */
+        .sortiment-section {
+            transform: translateY(-50px);
+            position: relative;
+            z-index: 10;
+        }
+
+        .sortiment-grid {
+            background: var(--color-white);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media(min-width: 768px) {
+            .sortiment-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .sortiment-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .sortiment-item {
+            padding: 2rem;
+            text-align: center;
+            border-right: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            transition: var(--transition);
+        }
+
+        .sortiment-item:hover {
+            background-color: #fafafa;
+        }
+
+        .sortiment-icon {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+
+        /* 
+        ========================================
+        7. HORIZONTAL GALLERY SCROLLER
+        ========================================
+        */
+        .gallery-container {
+            overflow: hidden;
+            padding-bottom: 2rem;
+        }
+
+        .gallery-scroller {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 1rem var(--spacing-sm);
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .gallery-scroller::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-card {
+            flex: 0 0 300px;
+            /* Force width */
+            scroll-snap-align: center;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+
+        @media(min-width: 768px) {
+            .gallery-card {
+                flex: 0 0 400px;
+            }
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* 
+        ========================================
+        8. WHY US / PROMISES
+        ========================================
+        */
+        .feature-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .feature-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+
+        /* 
+        ========================================
+        9. TEASER GRID (COMPANY/SERVICE/PRODUCTS)
+        ========================================
+        */
+        .teaser-card {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            background: #fff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .teaser-img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .teaser-body {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .teaser-body .btn {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        /* 
+        ========================================
+        10. PROMISES GRID
+        ========================================
+        */
+        .promise-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .promise-icon {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        /* 
+        ========================================
+        11. STATS & ABOUT
+        ========================================
+        */
+        .stat-box {
+            display: inline-block;
+            margin-right: 3rem;
+            margin-top: 1rem;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--color-accent);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #999;
+        }
+
+        /* 
+        ========================================
+        12. CONTACT SECTION
+        ========================================
+        */
+        .contact-wrapper {
+            background: url('assets/images/DSC1666-e1478518344612-1500x607.jpg') no-repeat center center/cover;
+            position: relative;
+            padding: var(--spacing-xl) 0;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: var(--spacing-lg);
+            /* Off-center look */
+            padding: 3rem;
+            border-radius: var(--radius-md);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        @media(max-width: 992px) {
+            .contact-box {
+                margin: 0 auto;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+
+        /* 
+        ========================================
+        13. FOOTER
+        ========================================
+        */
+        .footer {
+            background-color: #1a1a1a;
+            color: #888;
+            font-size: 0.9rem;
+            padding-top: 5rem;
+        }
+
+        .footer h4 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer a:hover {
+            color: var(--color-accent);
+        }
+
+        .footer-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-bottom {
+            background-color: #111;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* 
+        ========================================
+        14. STICKY SIDEBAR
+        ========================================
+        */
+        .sticky-sidebar {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            z-index: 9999;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-item {
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            /* WhatsApp Green default for test */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            transition: width 0.3s ease;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .sidebar-item:hover {
+            width: 200px;
+        }
+
+        .sidebar-text {
+            position: absolute;
+            left: 60px;
+            opacity: 0;
+            transition: opacity 0.3s 0.1s;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .sidebar-item:hover .sidebar-text {
+            opacity: 1;
+        }
+
+        .sidebar-phone {
+            background-color: var(--color-primary);
+        }
+
+        .sidebar-mail {
+            background-color: var(--color-accent);
+        }
+
+        .sidebar-whatsapp {
+            background-color: #25d366;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+    ========================================
+    TOP BAR
+    ========================================
+    -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-links">
+                <a href="#">Keramik Orion Partner</a>
+                <span style="color:#444">|</span>
+                <a href="#">So finden Sie uns</a>
+                <span style="color:#444">|</span>
+                <a href="tel:072407285">📞 07240 / 7285</a>
+            </div>
+            <div class="top-socials">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    ========================================
+    HEADER
+    ========================================
+    -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/images/Jubilaeumslogo-Schwarz-Weiss-Detail-300x106.jpg" alt="Kraft Fliesen GmbH">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Startseite</a></li>
+                    <li class="nav-item-has-children"><a href="#unternehmen" class="nav-link">Unternehmen</a></li>
+                    <li class="nav-item-has-children"><a href="#sortiment" class="nav-link">Sortiment</a></li>
+                    <li><a href="#wohnideen" class="nav-link">Wohnideen</a></li>
+                    <li><a href="#service" class="nav-link">Service</a></li>
+                    <li><a href="#news" class="nav-link">Aktuelles</a></li>
+                    <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                    <li><span class="search-icon">🔍</span></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 
+    ========================================
+    HERO
+    ========================================
+    -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h4 class="hero-subtitle">Ihr Fliesenexperte</h4>
+            <h1>FÜR RÄUME, DIE MEHR ERZÄHLEN.</h1>
+            <p>Zwischen Karlsruhe und Pforzheim. Wand- und Bodenfliesen • Naturstein • Vinyl • Holzböden</p>
+            <div class="hero-buttons">
+                <a href="#unternehmen" class="btn btn-primary">Besuchen Sie unsere Ausstellung</a>
+                <a href="#kontakt" class="btn btn-outline" style="border-color: white; color: white;">Beratungstermin
+                    Buchen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    ICON BOXES (SORTIMENT)
+    ========================================
+    -->
+    <div class="container sortiment-section">
+        <div class="sortiment-grid">
+            <div class="sortiment-item">
+                <img src="assets/images/sym1.png" alt="Bodenbeläge"
+                    style="display: block; margin: 0 auto 1rem auto; width: 50%; max-width: 100px;">
+                <h3>Bodenbeläge</h3>
+                <p class="text-small" style="text-align: center;">Fliesen • Naturstein • Vinyl • Parkett<br>
+                    Laminat • Holzböden • Mosaik Terrassenplatten<br>
+                    Mineralische Beschichtungen Sichtestriche</p>
+                <a href="#" class="text-accent uppercase">Mehr Infos &rarr;</a>
+            </div>
+            <div class="sortiment-item">
+                <img src="assets/images/sym2.png" alt="Wandbeläge"
+                    style="display: block; margin: 0 auto 1rem auto; width: 50%; max-width: 100px;">
+                <h3>Wandbeläge</h3>
+                <p class="text-small" style="text-align: center;">Fliesen • Naturstein<br>
+                    Mosaik • Steinverkleidungen Dekorelemente<br>
+                    Akustikpaneele • Mineralischer Putz</p>
+                <a href="#" class="text-accent uppercase">Mehr Infos &rarr;</a>
+            </div>
+            <div class="sortiment-item">
+                <img src="assets/images/sym3.png" alt="Werkzeuge"
+                    style="display: block; margin: 0 auto 1rem auto; width: 50%; max-width: 100px;">
+                <h3>Werkzeuge</h3>
+                <p class="text-small" style="text-align: center;">Fliesenlegerwerkzeug Schneidemaschinen<br>
+                    Nasssägen • Diamantwerkzeug<br>
+                    Fliesenschneider leihweise<br>
+                    Verlegehilfen</p>
+                <a href="#" class="text-accent uppercase">Mehr Infos &rarr;</a>
+            </div>
+            <div class="sortiment-item">
+                <img src="assets/images/sym4.png" alt="Zubehör"
+                    style="display: block; margin: 0 auto 1rem auto; width: 50%; max-width: 100px;">
+                <h3>Zubehör</h3>
+                <p class="text-small" style="text-align: center;">Bodenabläufe • Fußbodenheizunge<br>
+                    Bodensysteme • Balkonsysteme<br>
+                    Verlegematerial • Fugen & Silikone Reinigungsmittel<br>
+                    Fliesenprofile & Schienen Duschablagen</p>
+                <a href="#" class="text-accent uppercase">Mehr Infos &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    ========================================
+    GALLERY SCROLLER
+    ========================================
+    -->
+    <section class="section">
+        <div class="container">
+            <h4 class="text-accent uppercase text-center mb-2">Unsere Kollektionen</h4>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-scroller">
+                <!-- Images from Source -->
+                <div class="gallery-card">
+                    <img src="assets/images/37023-Cero-Wood-Eiche-30x120-1-1030x728.jpg" alt="Cero Wood Eiche">
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/37023-Cero-Wood-Eiche-Dekor-1030x728.jpg" alt="Cero Wood Dekor">
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/Neckar-Silber-JPG-scaled.jpg" alt="Neckar Silber">
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/foto-NECKAR-CREME.jpg" alt="Neckar Creme">
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/Titan-e-Weiss_Bathroom_Neckar_Ceramiche_Imola-scaled.jpg" alt="Titan Weiss">
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/Neckar-Dunkelgrau.jpg" alt="Neckar Dunkelgrau">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    WHY CHOOSE US
+    ========================================
+    -->
+    <section class="section section-grey" id="unternehmen">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <h4 class="text-accent uppercase">Ihre beste Wahl</h4>
+                    <h2>WARUM SICH FÜR UNS ENTSCHEIDEN?</h2>
+                    <p>Seit 1974 sind wir Ihr verlässlicher Partner für Fliesen und Naturstein. Auf über 800 m²
+                        Ausstellungsfläche präsentieren wir Ihnen die neuesten Trends und zeitlose Klassiker.</p>
+
+                    <ul class="feature-list" style="margin-top:2rem;">
+                        <li><strong>Fachkundige Beratung:</strong> Unser Experten-Team nimmt sich Zeit für Sie.</li>
+                        <li><strong>Alles aus einer Hand:</strong> Von der Planung bis zur Lieferung.</li>
+                        <li><strong>Über 50 Jahre Erfahrung:</strong> Tradition trifft Moderne.</li>
+                        <li><strong>Am Puls der Zeit:</strong> Ständig aktualisiertes Sortiment führender Hersteller.
+                        </li>
+                    </ul>
+
+                    <div style="margin-top: 3rem;">
+                        <a href="#kontakt" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                <div>
+                    <!-- Main Company Image -->
+                    <img src="assets/images/DSC1666-e1478518344612-1500x607.jpg" alt="Kraft Fliesen Gebäude"
+                        style="border-radius:8px; box-shadow:var(--shadow-hover);">
+
+                    <div class="grid grid-2" style="margin-top: 2rem; gap: 1rem;">
+                        <img src="assets/images/Titan-e-Weiss_Bathroom_Neckar_Ceramiche_Imola-scaled.jpg"
+                            onclick="openLightbox(this)" alt="Ausstellung"
+                            style="border-radius:4px; height:150px; object-fit:cover;">
+                        <img src="assets/images/Restposten-ABK-Unika-Grey.jpg" onclick="openLightbox(this)" alt="Lager"
+                            style="border-radius:4px; height:150px; object-fit:cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    TEASERS: UNTERNEHMEN / SERVICE / PRODUKTE
+    ========================================
+    -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3">
+                <!-- Teaser 1 -->
+                <div class="teaser-card">
+                    <img src="assets/images/DSC1666-e1478518344612-1500x607.jpg" alt="Unternehmen" class="teaser-img">
+                    <div class="teaser-body">
+                        <h3>Unternehmen</h3>
+                        <p>Erfahren Sie mehr über unsere Geschichte, unser Team und unsere Philosophie.</p>
+                        <a href="#" class="btn btn-outline">Mehr erfahren</a>
+                    </div>
+                </div>
+                <!-- Teaser 2 -->
+                <div class="teaser-card">
+                    <img src="assets/images/header_Service.png" alt="Service" class="teaser-img">
+                    <div class="teaser-body">
+                        <h3>Service</h3>
+                        <p>Von der 3D-Planung bis zur Lieferung - wir sind für Sie da.</p>
+                        <a href="#" class="btn btn-outline">Mehr erfahren</a>
+                    </div>
+                </div>
+                <!-- Teaser 3 -->
+                <div class="teaser-card">
+                    <img src="assets/images/header_produlte.png" alt="Produkte" class="teaser-img">
+                    <div class="teaser-body">
+                        <h3>Produkte</h3>
+                        <p>Entdecken Sie unser vielfältiges Sortiment für jeden Geschmack.</p>
+                        <a href="#" class="btn btn-outline">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    PROMISES GRID
+    ========================================
+    -->
+    <section class="section section-grey">
+        <div class="container">
+            <h4 class="text-accent uppercase text-center">Qualität & Vertrauen</h4>
+            <h2 class="text-center mb-3">UNSERE VERSPRECHEN AN SIE</h2>
+
+            <div class="grid grid-4">
+                <div class="promise-item">
+                    <div class="promise-icon">💬</div>
+                    <div>
+                        <h4>Fachkundige Beratung</h4>
+                        <p class="text-small">Durch geschultes Fachpersonal.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">🏆</div>
+                    <div>
+                        <h4>Große Auswahl</h4>
+                        <p class="text-small">Top-Marken auf großer Fläche.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">🤝</div>
+                    <div>
+                        <h4>Netzwerk</h4>
+                        <p class="text-small">Empfehlung von über 250 Verlegern.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">✨</div>
+                    <div>
+                        <h4>Alles aus einer Hand</h4>
+                        <p class="text-small">Komplettservice für Ihr Projekt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #ddd;">
+
+            <div class="grid grid-4">
+                <div class="promise-item">
+                    <div class="promise-icon">🖥️</div>
+                    <div>
+                        <h4>3D Planung</h4>
+                        <p class="text-small">Fotorealistische Badplanung.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">🎨</div>
+                    <div>
+                        <h4>Bemusterung</h4>
+                        <p class="text-small">Muster direkt bei Ihnen vor Ort.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">🚚</div>
+                    <div>
+                        <h4>Lieferung</h4>
+                        <p class="text-small">Mit eigenem Fuhrpark und Kran.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">🧼</div>
+                    <div>
+                        <h4>Reinigung</h4>
+                        <p class="text-small">Professionelle Pflegeprodukte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    ABOUT & STATS
+    ========================================
+    -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h4 class="text-accent uppercase">Wir stellen uns vor</h4>
+                    <h2>ÜBER UNS</h2>
+                    <p>Tradition, die verpflichtet. Innovation, die begeistert. Lernen Sie die Menschen hinter Kraft
+                        Fliesen kennen.</p>
+
+                    <div class="stats-wrapper">
+                        <div class="stat-box">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Jahre Bestehen</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">9</div>
+                            <div class="stat-label">Experten</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary" style="margin-top:2rem;">Team kennenlernen</a>
+                </div>
+                <div>
+                    <img src="assets/images/Gruppenbild-2025.png" alt="Kraft Fliesen Team 2025"
+                        style="border-radius:8px; box-shadow: var(--shadow-hover);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    INSPIRATION (PORTFOLIO)
+    ========================================
+    -->
+    <section class="section section-grey" id="wohnideen">
+        <div class="container text-center">
+            <h4 class="text-accent uppercase">Wohnideen</h4>
+            <h2>UNSERE INSPIRATION</h2>
+            <div class="grid grid-4" style="margin-top: 2rem; gap: 1rem;">
+                <!-- Restored Pinterest Gallery Images -->
+                <img src="assets/images/ab08c3fed2a823d638ef24188131daf2.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/8d0a8d13e4625da0f9665d9fddad3c1d.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/c5185893f1fbd2a42b9ebf26fcabecfa.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/43cf6594ed24c609818e1ae0bee925b9.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/9950146b5f78548c264fd29429d3e05b.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/701157aecefd6c24eb5822d3336d482d.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/81d368c0321970b2d3e9c1134ff4ed9e.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/6115eab5ab32b66bc4ff5156a2d57358.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/dcba503ec4ec9360e020a5e6c6939c36.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/d0c4650914a36b8542c2cda01a37b9ef.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/3a33cd6efb16de8339d686ef46284e81.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/aad7c7a5c521442f7c6a22172a9f1cb3.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/341d7922ea4a925562881d600c7ff315.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/c3f077a64a487a0209126c116179b3c6.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/5c716c095ed521c1bc2e5637f1c8d704.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/f16352461d2133c52b5fb66829b2ba09.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/c359e5bb7c41fdd450248faea7ccd191.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/555419cc2653e84d15b40ade7dd21118.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/602daf02035a52abf491a241947fdbc5.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+                <img src="assets/images/fd54df00a23bc4008c0bd930545dc025.jpg" alt="Inspiration"
+                    style="border-radius:4px; width:100%; height:auto; object-fit:cover; aspect-ratio: 1/1;">
+            </div>
+            <a href="https://www.pinterest.de/kraftfliesenpfinztal/_created/" target="_blank" class="btn btn-outline"
+                style="margin-top: 2rem;">Entdecke weitere Wohnideen</a>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    NEWS / RESTPOSTEN
+    ========================================
+    -->
+    <section class="section" id="news">
+        <div class="container">
+            <div class="text-center mb-3">
+                <h4 class="text-accent uppercase">Rest- und Sonderposten</h4>
+                <h2>AKTUELLES</h2>
+                <p>Hier bieten wir aktuelle Rest- und Sonderposten zu Spitzenpreisen an.<br>Nur solange der Vorrat
+                    reicht!</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="teaser-card">
+                    <img src="assets/images/Restposten-Cercom-Zinc.jpg" alt="Cercom Zinc" class="teaser-img">
+                    <div class="teaser-body">
+                        <h3>Cercom Zinc</h3>
+                        <p>Modernes Design, robust und pflegeleicht.</p>
+                        <a href="#" class="text-accent">Ansehen &rarr;</a>
+                    </div>
+                </div>
+                <div class="teaser-card">
+                    <img src="assets/images/Restposten-Boizenburg-Weiss-matt-gewellt.jpg" alt="Weiss Matt Gewellt"
+                        class="teaser-img">
+                    <div class="teaser-body">
+                        <h3>Weiß Matt Gewellt</h3>
+                        <p>Klassisch zeitlos für jedes Badezimmer.</p>
+                        <a href="#" class="text-accent">Ansehen &rarr;</a>
+                    </div>
+                </div>
+                <div class="teaser-card">
+                    <img src="assets/images/Restposten-ABK-Unika-Grey.jpg" alt="ABK Unika Grey" class="teaser-img">
+                    <div class="teaser-body">
+                        <h3>ABK Unika Grey</h3>
+                        <p>Betonoptik in Perfektion.</p>
+                        <a href="#" class="text-accent">Ansehen &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="mailto:info@kraft-fliesen.de?subject=Anfrage%20Restposten" class="btn btn-primary">Angebot
+                    sichern</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    CONTACT FORM
+    ========================================
+    -->
+    <section id="kontakt" class="contact-wrapper">
+        <div class="container">
+            <div class="contact-box">
+                <h4 class="text-accent uppercase">Kontakt</h4>
+                <h2>DER DIREKTE DRAHT ZU UNS</h2>
+                <p>Haben Sie Fragen? Wir helfen Ihnen gerne weiter.</p>
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ihr Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Ihre E-Mail-Adresse" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Wie können wir Ihnen helfen?"
+                            required></textarea>
+                    </div>
+                    <div class="form-group" style="margin-top:1rem; display:flex; gap:10px; align-items:start;">
+                        <input type="checkbox" id="privacy-check" required style="width:auto; margin-top:5px;">
+                        <label for="privacy-check" style="font-size:0.8rem; color:#888; text-align:left;">
+                            Ich habe die <a href="https://kraft-fliesen.de/datenschutzerklaerung/" target="_blank"
+                                style="text-decoration:underline;">Datenschutzerklärung</a> zur Kenntnis genommen und
+                            stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen gespeichert werden.
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; margin-top:1rem;">Nachricht
+                        Senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    STICKY SIDEBAR NAV
+    ========================================
+    -->
+    <div class="sticky-sidebar">
+        <div class="sidebar-item sidebar-phone" onclick="window.location.href='tel:004972407285'">
+            <span>📞</span>
+            <span class="sidebar-text">07240 / 7285</span>
+        </div>
+        <div class="sidebar-item sidebar-mail" onclick="window.location.href='mailto:timkraft@kraft-fliesen.de'">
+            <span>✉️</span>
+            <span class="sidebar-text">Email schreiben</span>
+        </div>
+        <div class="sidebar-item sidebar-whatsapp" onclick="window.location.href='https://wa.me/49072407285'">
+            <span>💬</span>
+            <span class="sidebar-text">WhatsApp</span>
+        </div>
+    </div>
+
+    <!-- 
+    ========================================
+    FOOTER
+    ========================================
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4" style="align-items: flex-start;">
+                <!-- Col 1: Logo & Partners -->
+                <div>
+                    <img src="assets/images/logo_web_footer.png" alt="Kraft Logo"
+                        style="background:#fff; padding:10px; border-radius:4px; max-width:180px; margin-bottom:1.5rem;">
+
+                    <h5 style="color:#666; font-size:0.9rem; margin-bottom:1rem; text-transform:uppercase;">Unsere
+                        Partner:</h5>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:2rem;">
+                        <a href="http://www.keramik-orion.de/" target="_blank">
+                            <img src="assets/images/Keramik-Orion_Logo_RGB_s-e1477926227622.jpg" alt="Keramik Orion"
+                                style="height:40px; border-radius:2px;">
+                        </a>
+                        <a href="http://www.keramik-orion.de/" target="_blank">
+                            <img src="assets/images/cero.jpg" alt="Cero"
+                                style="height:40px; background:#fff; padding:2px; border-radius:2px;">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Contact Info -->
+                <div>
+                    <h4>Kontakt</h4>
+                    <ul class="footer-list">
+                        <li>Kraft-Fliesen GmbH</li>
+                        <li>Reetzstraße 48 - 52</li>
+                        <li>76327 Pfinztal - Söllingen</li>
+                        <li style="margin-top:1rem;"><strong>Tel:</strong> 07240 / 7285</li>
+                        <li><strong>Fax:</strong> 07240 / 7287</li>
+                        <li><strong>Email:</strong> info@kraft-fliesen.de</li>
+                    </ul>
+                    <a href="https://goo.gl/maps/..." target="_blank" class="btn btn-outline"
+                        style="margin-top:1rem; padding:0.5rem 1rem; border-color:#666; color:#aaa; font-size:0.75rem;">Anfahrt
+                        (Google Maps)</a>
+                </div>
+
+                <!-- Col 3: Hours -->
+                <div>
+                    <h4>Öffnungszeiten</h4>
+                    <ul class="footer-list">
+                        <li><strong>Mo – Fr:</strong><br>07:30 - 18:00 Uhr</li>
+                        <li style="margin-top:0.5rem;"><strong>Samstag:</strong><br>08:00 - 12:00 Uhr</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Links -->
+                <div>
+                    <h4>Rechtliches</h4>
+                    <ul class="footer-list">
+                        <li><a href="https://kraft-fliesen.de/impressum/" target="_blank">Impressum</a></li>
+                        <li><a href="https://kraft-fliesen.de/datenschutzerklaerung/" target="_blank">Datenschutz</a>
+                        </li>
+                        <li><a href="https://kraft-fliesen.de/allgemeine-geschaeftsbedingungen/" target="_blank">AGB</a>
+                        </li>
+                        <li><a href="#">Widerrufsbelehrung</a></li>
+                        <li><a href="#"
+                                onclick="alert('Cookie-Einstellungen sind in dieser statischen Demo deaktiviert.'); return false;">Cookie-Einstellungen
+                                / Zustimmung verwalten</a></li>
+                    </ul>
+
+                    <div style="margin-top:2rem;">
+                        <a href="https://www.facebook.com/kraftfliesen" target="_blank"
+                            style="font-size:1.5rem; margin-right:1rem; text-decoration:none;">📘</a> <!-- FB -->
+                        <a href="https://www.pinterest.de/kraftfliesenpfinztal/_created/" target="_blank"
+                            style="font-size:1.5rem; margin-right:1rem; text-decoration:none;">📌</a> <!-- Pinterest -->
+                        <a href="https://www.instagram.com/kraft_fliesen_gmbh" target="_blank"
+                            style="font-size:1.5rem; text-decoration:none;">📷</a> <!-- Insta -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Kraft Fliesen GmbH. Alle Rechte vorbehalten. | <a href="#">So finden Sie uns</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+    ========================================
+    JAVASCRIPT INTERACTION
+    ========================================
+    -->
+    <script>
+        (function () {
+            // Mobile Menu
+            const toggleBtn = document.querySelector('.mobile-toggle');
+            const nav = document.querySelector('.nav-desktop');
+            const body = document.body;
+
+            // Note: In a real "all in one" mobile menu, we'd usually clone the desktop nav into a drawer.
+            // For simplicity in this single file, I'll toggle the .nav-desktop visibility for mobile if screen is small.
+            // Or better: Create a dedicated mobile overlay via JS to avoid CSS layout mess.
+
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'mobile-menu-overlay';
+            mobileMenu.style.cssText = `
+                position: fixed; top: 90px; left: 0; width: 100%; height: 0; 
+                background: white; overflow: hidden; transition: height 0.3s ease; 
+                z-index: 999; box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            `;
+
+            // Clone links
+            const links = document.querySelector('.nav-list').cloneNode(true);
+            links.style.cssText = 'display:flex; flex-direction:column; padding:2rem; gap:1.5rem; text-align:center;';
+            mobileMenu.appendChild(links);
+            body.appendChild(mobileMenu);
+
+            toggleBtn.addEventListener('click', () => {
+                const isOpen = mobileMenu.style.height === '100vh'; // or auto
+                mobileMenu.style.height = isOpen ? '0' : '100vh'; // Full screen overlay
+            });
+
+            // Close on link click
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.style.height = '0';
+                });
+            });
+
+        })();
+    </script>
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//kraft-fliesen.de/";
+            _paq.push(['setTrackerUrl', u + 'wp-content/plugins/matomo/app/matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'wp-content/uploads/matomo/matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</body>
+
+</html>
