@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <title>Kraft Fliesen GmbH – Ihr Fliesenexperte seit 1974 | Pfinztal</title>
+    <meta name="description" content="Kraft Fliesen GmbH – Ihr Fliesenexperte zwischen Karlsruhe und Pforzheim. Über 800m² Ausstellung, 50+ Jahre Erfahrung. Fliesen, Naturstein, Vinyl, Holzböden & mehr.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="kf_white.png" alt="Kraft Fliesen GmbH" class="nav-logo-img nav-logo-white">
+                <img src="kf_logo.png" alt="Kraft Fliesen GmbH" class="nav-logo-img nav-logo-black">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sortiment">Sortiment</a></li>
+                <li><a href="#warum-wir">Warum wir</a></li>
+                <li><a href="#unternehmen">Unternehmen</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#inspiration">Inspiration</a></li>
+                <li><a href="#bewertungen">Bewertungen</a></li>
+                <li><a href="#kontakt" class="nav-cta">Beratungstermin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video/Slideshow -->
+    <section class="hero" id="hero">
+        <div class="hero-slideshow">
+            <div class="hero-slide active" data-slide="0">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero-fliesen-ausstellung.jpg')"></div>
+                <div class="slide-content">
+                    <span class="slide-tag">Wand- & Bodenfliesen</span>
+                    <h2>Für Räume, die<br>mehr erzählen.</h2>
+                    <p>Entdecken Sie über 10.000 verschiedene Wand- und Bodenbeläge in unserer Ausstellung.</p>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="1">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero-naturstein.jpg')"></div>
+                <div class="slide-content">
+                    <span class="slide-tag">Naturstein & Terrasse</span>
+                    <h2>Zeitlose Eleganz<br>für Ihr Zuhause.</h2>
+                    <p>Von klassisch bis ausgefallen – finden Sie Ihren perfekten Naturstein.</p>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="2">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero-3d-planung.jpg')"></div>
+                <div class="slide-content">
+                    <span class="slide-tag">Individuelle 3D-Planung</span>
+                    <h2>Ihr Traum.<br>Fotorealistisch geplant.</h2>
+                    <p>Erleben Sie Ihr Bauvorhaben schon vor dem ersten Handgriff.</p>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="3">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero-marke-team.jpg')"></div>
+                <div class="slide-content">
+                    <span class="slide-tag">Seit 1974</span>
+                    <h2>50+ Jahre<br>Leidenschaft.</h2>
+                    <p>Familienbetrieb in dritter Generation mit über 10.000 zufriedenen Kunden.</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-progress">
+            <button class="progress-dot active" data-slide="0"><svg viewBox="0 0 36 36"><circle class="progress-ring" cx="18" cy="18" r="16"/></svg><span>01</span></button>
+            <button class="progress-dot" data-slide="1"><svg viewBox="0 0 36 36"><circle class="progress-ring" cx="18" cy="18" r="16"/></svg><span>02</span></button>
+            <button class="progress-dot" data-slide="2"><svg viewBox="0 0 36 36"><circle class="progress-ring" cx="18" cy="18" r="16"/></svg><span>03</span></button>
+            <button class="progress-dot" data-slide="3"><svg viewBox="0 0 36 36"><circle class="progress-ring" cx="18" cy="18" r="16"/></svg><span>04</span></button>
+        </div>
+        <div class="hero-ctas">
+            <a href="#kontakt" class="btn btn-primary">Beratungstermin buchen</a>
+            <a href="#sortiment" class="btn btn-outline">Sortiment entdecken</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Entdecken</span>
+        </div>
+    </section>
+
+    <!-- Scroll-Highlight Intro -->
+    <section class="text-reveal" id="intro">
+        <div class="container">
+            <p class="reveal-text" data-reveal>
+                Wir sind <strong>Kraft Fliesen</strong> – Ihr <em>Familienunternehmen</em> für Boden- und Wandbeläge seit <strong>1974</strong>. In unserem neu erbauten Haus bieten wir Ihnen auf über <strong>800 m²</strong> eine riesige Auswahl an verschiedenen Belägen. Bei uns erhalten Sie nicht nur verschiedene Boden- und Wandbeläge <em>aus einer Hand</em> – bei uns wird <strong>Service</strong> großgeschrieben.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sortiment Section -->
+    <section class="sortiment section-tile-pattern" id="sortiment">
+        <div class="section-header">
+            <span class="section-tag" data-animate>Alles aus einer Hand</span>
+            <h2 class="section-title" data-animate>Unser Sortiment</h2>
+        </div>
+        <div class="sortiment-grid">
+            <a href="#kontakt" class="sortiment-card" data-animate data-delay="0">
+                <div class="card-image">
+                    <img src="assets/images/sortiment-fliesen.jpg" alt="Wand- und Bodenfliesen – Kraft Fliesen Pfinztal" loading="lazy" width="1026" height="1030">
+                </div>
+                <div class="card-content">
+                    <h3>Wand- & Bodenfliesen</h3>
+                    <p>Vielseitig, ökologisch, pflegeleicht und widerstandsfähig. Keramische Fliesen sind der optimale Begleiter in jedem Raum.</p>
+                    <span class="card-link">Mehr erfahren <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+            </a>
+            <a href="#kontakt" class="sortiment-card" data-animate data-delay="100">
+                <div class="card-image">
+                    <img src="assets/images/sortiment-naturstein.jpg" alt="Naturstein – Kraft Fliesen" loading="lazy" width="845" height="684">
+                </div>
+                <div class="card-content">
+                    <h3>Naturstein</h3>
+                    <p>Eleganz und Zeitlosigkeit in der Architektur. Durch viele Bearbeitungsmöglichkeiten in allen Bereichen einsetzbar.</p>
+                    <span class="card-link">Mehr erfahren <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+            </a>
+            <a href="#kontakt" class="sortiment-card" data-animate data-delay="200">
+                <div class="card-image">
+                    <img src="assets/images/sortiment-terrasse.jpg" alt="Terrassen- und Balkonplatten" loading="lazy" width="845" height="684">
+                </div>
+                <div class="card-content">
+                    <h3>Terrasse & Balkon</h3>
+                    <p>Keramische Balkon- und Terrassenplatten – pflegeleicht, widerstandsfähig und langlebig für jeden Außenbereich.</p>
+                    <span class="card-link">Mehr erfahren <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+            </a>
+            <a href="#kontakt" class="sortiment-card" data-animate data-delay="300">
+                <div class="card-image">
+                    <img src="assets/images/sortiment-vinyl.jpg" alt="Design-Vinyl – Kraft Fliesen" loading="lazy" width="845" height="684">
+                </div>
+                <div class="card-content">
+                    <h3>Design-Vinyl</h3>
+                    <p>Stark im Trend – flexibel einsetzbar, leise, weich und robust. Verschiedene Designs für jeden Raum.</p>
+                    <span class="card-link">Mehr erfahren <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+            </a>
+            <a href="#kontakt" class="sortiment-card" data-animate data-delay="400">
+                <div class="card-image">
+                    <img src="assets/images/sortiment-holz.jpg" alt="Holzböden und Parkett" loading="lazy" width="845" height="684">
+                </div>
+                <div class="card-content">
+                    <h3>Holzböden & Parkett</h3>
+                    <p>Die Vielfalt von Holz zur Geltung bringen. Modernste Entwicklungen für höchste Ansprüche, selbst in Küche und Bad.</p>
+                    <span class="card-link">Mehr erfahren <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+            </a>
+            <a href="#kontakt" class="sortiment-card" data-animate data-delay="500">
+                <div class="card-image">
+                    <img src="assets/images/sortiment-wandverkleidung.jpg" alt="Wandverkleidung" loading="lazy" width="845" height="684">
+                </div>
+                <div class="card-content">
+                    <h3>Wandverkleidung & Zubehör</h3>
+                    <p>Steinverkleidungen, Akustikpaneele, Dekorelemente und professionelles Verlegewerkzeug – alles aus einer Hand.</p>
+                    <span class="card-link">Mehr erfahren <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Horizontal Scroll Showcase -->
+    <section class="horizontal-showcase" id="warum-wir">
+        <div class="showcase-sticky section-tile-pattern">
+            <div class="showcase-header">
+                <span class="section-tag">Ihre beste Wahl</span>
+                <h2 class="section-title">8 Argumente,<br>die überzeugen.</h2>
+            </div>
+            <div class="showcase-track">
+                <div class="showcase-card">
+                    <div class="showcase-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="20"/><path d="M24 14v10l6 6"/></svg>
+                    </div>
+                    <h3>50+ Jahre Erfahrung</h3>
+                    <p>Seit 1974 beschäftigen wir uns mit Boden- und Wandbelägen. Profitieren Sie von tausenden realisierten Projekten.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 24h36M24 6v36"/><circle cx="24" cy="24" r="20"/></svg>
+                    </div>
+                    <h3>Alles aus einer Hand</h3>
+                    <p>Fliesen fürs Bad, Parkett fürs Schlafzimmer, Vinyl fürs Wohnzimmer – bei uns finden Sie alles an einem Ort!</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M6 18h36M18 6v36"/></svg>
+                    </div>
+                    <h3>800m² Ausstellung</h3>
+                    <p>Über 10.000 unterschiedliche Wand- und Bodenbeläge live erleben. Große Musterschränke und Beispielflächen.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14L4 16h14z"/></svg>
+                    </div>
+                    <h3>Fachkundige Beratung</h3>
+                    <p>Unsere Mitarbeiter sind fachkundig geschult und zertifiziert. Individuell eingehend auf Ihr Bauvorhaben.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 40V20l16-12 16 12v20H8z"/><rect x="18" y="26" width="12" height="14"/></svg>
+                    </div>
+                    <h3>3D-Raumplanung</h3>
+                    <p>Fotorealistische, individuelle 3D-Planung. Erleben Sie Ihren Wohntraum schon vor dem Bau.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 36l-4 8h32l-4-8"/><rect x="8" y="8" width="32" height="28" rx="2"/></svg>
+                    </div>
+                    <h3>Bemusterung vor Ort</h3>
+                    <p>Wir kommen mit Mustern zu Ihnen nach Hause. Lichtverhältnisse und Farbwirkungen direkt erleben.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="14" width="36" height="24" rx="3"/><path d="M16 14V10a8 8 0 0116 0v4"/></svg>
+                    </div>
+                    <h3>Flexible Lieferung</h3>
+                    <p>Mit eigenem Fuhrpark liefern wir kurzfristig und flexibel direkt auf Ihre Baustelle. Entladung per Kran.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="20"/><path d="M16 24l5 5 11-11"/></svg>
+                    </div>
+                    <h3>Handwerker-Empfehlung</h3>
+                    <p>Über 250 Verleger im Portfolio. Wir helfen Ihnen den passenden Handwerker für Ihr Projekt zu finden.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section (Pino-style) -->
+    <section class="counters" id="unternehmen">
+        <div class="counter-bg" style="background-image: url('assets/images/counter-bg.jpg')"></div>
+        <div class="counter-overlay"></div>
+        <div class="container counter-content">
+            <span class="section-tag section-tag--light">Zahlen, die sprechen</span>
+            <h2 class="section-title section-title--light">Unser Unternehmen<br>in Zahlen.</h2>
+            <div class="counter-grid">
+                <div class="counter-item" data-count="50" data-suffix="+">
+                    <div class="counter-number"><span class="count">0</span>+</div>
+                    <div class="counter-label">Jahre Erfahrung</div>
+                    <div class="counter-sub">Gegründet 1974 von Hugo Kraft</div>
+                </div>
+                <div class="counter-item" data-count="800" data-suffix="m²">
+                    <div class="counter-number"><span class="count">0</span>m²</div>
+                    <div class="counter-label">Ausstellungsfläche</div>
+                    <div class="counter-sub">Im neu erbauten Haus in Pfinztal</div>
+                </div>
+                <div class="counter-item" data-count="10000" data-suffix="+">
+                    <div class="counter-number"><span class="count">0</span>+</div>
+                    <div class="counter-label">Zufriedene Kunden</div>
+                    <div class="counter-sub">Projekte erfolgreich realisiert</div>
+                </div>
+                <div class="counter-item" data-count="250" data-suffix="+">
+                    <div class="counter-number"><span class="count">0</span>+</div>
+                    <div class="counter-label">3D-Planungen</div>
+                    <div class="counter-sub">Individuelle Raumvisualisierungen</div>
+                </div>
+                <div class="counter-item" data-count="9">
+                    <div class="counter-number"><span class="count">0</span></div>
+                    <div class="counter-label">Experten im Team</div>
+                    <div class="counter-sub">Familiär, kompetent & zuverlässig</div>
+                </div>
+                <div class="counter-item" data-count="3" data-suffix=". Gen.">
+                    <div class="counter-number"><span class="count">0</span>. Gen.</div>
+                    <div class="counter-label">Familientradition</div>
+                    <div class="counter-sub">Familienbetrieb mit Herz</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with direction changes -->
+    <section class="services section-tile-pattern" id="services">
+        <div class="section-header">
+            <span class="section-tag" data-animate>Unser Versprechen</span>
+            <h2 class="section-title" data-animate>Service, der begeistert.</h2>
+        </div>
+        <div class="service-blocks">
+            <div class="service-block" data-animate>
+                <div class="service-visual">
+                    <img src="assets/images/service-beratung.jpg" alt="Große Auswahl an Boden- und Wandfliesen in der Kraft-Ausstellung (Cero Wood Eiche)" loading="lazy" width="2048" height="1447">
+                    <div class="service-badge">01</div>
+                </div>
+                <div class="service-text">
+                    <h3>Individuelle Beratung</h3>
+                    <p>Eine individuelle und kompetente Beratung ist der Grundstein für zufriedene Kunden. Unser geschultes Fachpersonal steht Ihnen jederzeit zur Seite und hilft Ihnen, Ihre Räume optimal zu gestalten. Eingehend auf Ihr persönliches Bauvorhaben beziehen wir Ihr Raumkonzept in die Planung ein.</p>
+                    <a href="#kontakt" class="service-link">Beratungstermin vereinbaren</a>
+                </div>
+            </div>
+            <div class="service-block service-block--reverse" data-animate>
+                <div class="service-visual">
+                    <img src="assets/images/service-3d.jpg" alt="3D-Raumplanung: visualisierter Wohnraum (PALEO) bei Kraft Fliesen" loading="lazy" width="2560" height="1810">
+                    <div class="service-badge">02</div>
+                </div>
+                <div class="service-text">
+                    <h3>3D-Raumplanung</h3>
+                    <p>Erleben Sie Ihren Wunschraum schon vor dem eigentlichen Bau. Unsere fotorealistische 3D-Planung hilft enorm bei der Auswahl der richtigen Wand- und Bodenbeläge und gibt Ihnen absolute Planungssicherheit.</p>
+                    <a href="#kontakt" class="service-link">Planung anfragen</a>
+                </div>
+            </div>
+            <div class="service-block" data-animate>
+                <div class="service-visual">
+                    <img src="assets/images/service-bemusterung.jpg" alt="Bemusterung und Muster im Showroom" loading="lazy" width="845" height="684">
+                    <div class="service-badge">03</div>
+                </div>
+                <div class="service-text">
+                    <h3>Bemusterung vor Ort</h3>
+                    <p>Falls Sie sich in unserer Ausstellung nicht entscheiden können, kommen wir mit den Mustern zu Ihnen nach Hause! Lichtverhältnisse, Möbelkombinationen und Farbwirkungen lassen sich so perfekt beurteilen.</p>
+                    <a href="#kontakt" class="service-link">Termin buchen</a>
+                </div>
+            </div>
+            <div class="service-block service-block--reverse" data-animate>
+                <div class="service-visual">
+                    <img src="assets/images/service-lieferung.jpg" alt="Lieferung mit eigenem Fuhrpark" loading="lazy" width="845" height="684">
+                    <div class="service-badge">04</div>
+                </div>
+                <div class="service-text">
+                    <h3>Lieferung & Logistik</h3>
+                    <p>Mit unserem hauseigenen LKW transportieren wir Ihr Material direkt zu Ihnen auf die Baustelle und entladen die Ware per Kran. Bequem – Flexibel – Schnell.</p>
+                    <a href="#kontakt" class="service-link">Lieferung anfragen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Gallery (Schöner Wohnen style masonry) -->
+    <section class="inspiration section-tile-pattern" id="inspiration">
+        <div class="section-header">
+            <span class="section-tag" data-animate>Unsere Inspiration</span>
+            <h2 class="section-title" data-animate>Wohnideen entdecken.</h2>
+        </div>
+        <div class="masonry-grid">
+            <div class="masonry-item masonry-item--tall" data-animate>
+                <img src="assets/images/inspo-01-bad.jpg" alt="Modernes Badezimmer – Wohnidee" loading="lazy" width="845" height="684">
+                <div class="masonry-overlay">
+                    <span>Modernes Badezimmer</span>
+                </div>
+            </div>
+            <div class="masonry-item" data-animate data-delay="100">
+                <img src="assets/images/inspo-02-wohnen.jpg" alt="Raumgestaltung Fliesen und Kombinationen" loading="lazy" width="845" height="684">
+                <div class="masonry-overlay">
+                    <span>Oasis &amp; Kombinationen</span>
+                </div>
+            </div>
+            <div class="masonry-item" data-animate data-delay="200">
+                <img src="assets/images/inspo-03-fliese.jpg" alt="Keramik- und Fliesendesign" loading="lazy" width="1500" height="1500">
+                <div class="masonry-overlay">
+                    <span>Factory-Look Keramik</span>
+                </div>
+            </div>
+            <div class="masonry-item masonry-item--wide" data-animate data-delay="300">
+                <img src="assets/images/inspo-04-detail.jpg" alt="Oberflächen und Details" loading="lazy" width="845" height="684">
+                <div class="masonry-overlay">
+                    <span>Struktur &amp; Oberfläche</span>
+                </div>
+            </div>
+            <div class="masonry-item masonry-item--tall" data-animate data-delay="100">
+                <img src="assets/images/inspo-05-langformat.jpg" alt="Langformat-Fliesen" loading="lazy" width="845" height="684">
+                <div class="masonry-overlay">
+                    <span>Langformat Almond</span>
+                </div>
+            </div>
+            <div class="masonry-item" data-animate data-delay="200">
+                <img src="assets/images/inspo-06-keramik.jpg" alt="Keramik und Nachhaltigkeit" loading="lazy" width="1357" height="1920">
+                <div class="masonry-overlay">
+                    <span>Keramik im Wandel</span>
+                </div>
+            </div>
+            <div class="masonry-item" data-animate data-delay="300">
+                <img src="assets/images/inspo-07-news.jpg" alt="Keramik Orion News" loading="lazy" width="1810" height="2560">
+                <div class="masonry-overlay">
+                    <span>Wohngesund mit Keramik</span>
+                </div>
+            </div>
+            <div class="masonry-item masonry-item--wide" data-animate data-delay="400">
+                <img src="assets/images/inspo-08-thinsation.jpg" alt="Thinsation Wohnidee" loading="lazy" width="935" height="1600">
+                <div class="masonry-overlay">
+                    <span>Thinsation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="bewertungen">
+        <div class="section-header">
+            <span class="section-tag" data-animate>Kundenstimmen</span>
+            <h2 class="section-title" data-animate>Was unsere Kunden sagen.</h2>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Sehr kompetent, freundlich, Preisleistung Verhältnis stimmt. Das Geschäft kann man ruhigem Gewissens weiter empfehlen."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div><strong>Alex Miller</strong><span>Google Bewertung</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Sehr angenehme Beratung, große Auswahl und Preis Leistung Verhältnis ist sehr gut. Kann man nur weiter empfehlen."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">WK</div>
+                        <div><strong>Wanda Koch</strong><span>Google Bewertung</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Sehr zu empfehlen! Bei meinem Besuch bei der Firma Kraft hat mich vor allem die große Auswahl und das freundliche Personal begeistert."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">FH</div>
+                        <div><strong>Fabian Hack</strong><span>Google Bewertung</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Super tolle und nette Beratung. Große Auswahl und gute Qualität. Tipps gibts gratis dazu."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">HP</div>
+                        <div><strong>Heike Pfeffer</strong><span>Google Bewertung</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Wie immer perfekte Beratung, große Auswahl und schnelle Lieferung."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TP</div>
+                        <div><strong>Tobias Pailer</strong><span>Google Bewertung</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Sehr gut, zuverlässig, preiswert und sehr kundenfreundlich."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">WK</div>
+                        <div><strong>Wladimir Kusnezow</strong><span>Google Bewertung</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="google-rating" data-animate>
+            <div class="google-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="google-info">
+                <div class="google-stars">★★★★★ <strong>5.0</strong></div>
+                <span>Basierend auf Google Bewertungen</span>
+            </div>
+            <a href="https://www.google.de/maps/place/Kraft+Fliesen+GmbH/" target="_blank" rel="noopener" class="btn btn-sm">Auch bewerten</a>
+        </div>
+    </section>
+
+    <!-- Process / Workflow Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-animate>Unser Vorgehen</span>
+                <h2 class="section-title" data-animate>In 4 Schritten<br>zum Wohntraum.</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-animate>
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Beratungsgespräch</h3>
+                        <p>Vereinbaren Sie einen Termin und besprechen Sie Ihr Bauvorhaben mit unseren Experten. Wir hören zu und analysieren Ihre Wünsche.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Materialauswahl</h3>
+                        <p>Entdecken Sie auf 800m² Ausstellung Ihr Traummaterial. Wir helfen Ihnen bei Planung und Konstruktionsaufbauten.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>3D-Visualisierung</h3>
+                        <p>Erleben Sie Ihr Bauvorhaben fotorealistisch in 3D. Absolute Planungssicherheit vor dem ersten Handgriff.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Lieferung & Umsetzung</h3>
+                        <p>Flexible Lieferung mit eigenem Fuhrpark direkt auf Ihre Baustelle. Bei Bedarf empfehlen wir qualifizierte Handwerker.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="contact" id="kontakt">
+        <div class="contact-split">
+            <div class="contact-info">
+                <span class="section-tag section-tag--light" data-animate>Der direkte Draht</span>
+                <h2 class="section-title section-title--light" data-animate>Lassen Sie uns<br>gemeinsam planen.</h2>
+                <p class="contact-desc">Vereinbaren Sie jetzt Ihren persönlichen Beratungstermin. Wir freuen uns auf Ihr Projekt!</p>
+                <div class="contact-details">
+                    <a href="tel:072407285" class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>07240 / 7285</span>
+                        </div>
+                    </a>
+                    <a href="mailto:info@kraft-fliesen.de" class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <strong>E-Mail</strong>
+                            <span>info@kraft-fliesen.de</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/4972407285" target="_blank" rel="noopener" class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                        </div>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>Nachricht senden</span>
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <strong>Adresse</strong>
+                            <span>Reetzstraße 48-52<br>76327 Pfinztal-Söllingen</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="opening-hours">
+                    <h4>Öffnungszeiten</h4>
+                    <div class="hours-grid">
+                        <span>Mo – Fr</span><span>08:00 – 12:00 & 13:30 – 18:00</span>
+                        <span>Samstag</span><span>08:00 – 13:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <form class="contact-form" id="contactForm">
+                    <h3>Kontaktformular</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required placeholder="Ihre E-Mail-Adresse">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Interesse</label>
+                            <select id="interest" name="interest">
+                                <option value="">Bitte wählen...</option>
+                                <option value="fliesen">Wand- & Bodenfliesen</option>
+                                <option value="naturstein">Naturstein</option>
+                                <option value="terrasse">Terrasse & Balkon</option>
+                                <option value="vinyl">Design-Vinyl</option>
+                                <option value="holz">Holzböden & Parkett</option>
+                                <option value="wandverkleidung">Wandverkleidung</option>
+                                <option value="3d">3D-Raumplanung</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nachricht *</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Beschreiben Sie Ihr Projekt..."></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzerklärung zu.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.7!2d8.5364113!3d48.9952335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47970bd913167c93%3A0x4d30ef4439240513!2sKraft+Fliesen+GmbH!5e1!3m2!1sde!2sde!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kraft Fliesen GmbH Standort"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="kf_white.png" alt="Kraft Fliesen GmbH" class="footer-logo-img">
+                    </div>
+                    <p>Ihr Fliesenexperte zwischen Karlsruhe und Pforzheim. Familienunternehmen seit 1974.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#sortiment">Sortiment</a></li>
+                        <li><a href="#warum-wir">Warum wir</a></li>
+                        <li><a href="#unternehmen">Unternehmen</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Produkte</h4>
+                    <ul>
+                        <li><a href="#sortiment">Wand- & Bodenfliesen</a></li>
+                        <li><a href="#sortiment">Naturstein</a></li>
+                        <li><a href="#sortiment">Design-Vinyl</a></li>
+                        <li><a href="#sortiment">Holzböden</a></li>
+                        <li><a href="#sortiment">Terrassenplatten</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>Reetzstraße 48-52<br>76327 Pfinztal-Söllingen</p>
+                    <p><a href="tel:072407285">07240 / 7285</a></p>
+                    <p><a href="mailto:info@kraft-fliesen.de">info@kraft-fliesen.de</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kraft Fliesen GmbH. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="https://kraft-fliesen.de/impressum/">Impressum</a>
+                    <a href="https://kraft-fliesen.de/datenschutzerklaerung/">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCta">
+        <a href="tel:072407285" class="float-btn float-phone" aria-label="Anrufen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </a>
+        <a href="https://wa.me/4972407285" target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
