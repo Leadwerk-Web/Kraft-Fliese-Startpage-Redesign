@@ -327,13 +327,131 @@
     }
 
     // ==========================================
+    // GALLERY FILTER (Inspiration Subpage)
+    // ==========================================
+    function setupGalleryFilter() {
+        const filterButtons = document.querySelectorAll('.gallery-filter button');
+        const items = document.querySelectorAll('.masonry-grid .masonry-item');
+        if (filterButtons.length === 0 || items.length === 0) return;
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                items.forEach(item => {
+                    const cat = item.dataset.category;
+                    const show = filter === 'all' || cat === filter;
+                    item.style.display = show ? '' : 'none';
+                    if (show) {
+                        item.classList.remove('animated');
+                        requestAnimationFrame(() => item.classList.add('animated'));
+                    }
+                });
+            });
+        });
+    }
+
+    // ==========================================
+    // CURSOR FOLLOWER
+    // ==========================================
+    function initCursorFollower() {
+        // Only on desktop with mouse
+        if (window.matchMedia('(hover: none) or (pointer: coarse)').matches) {
+            return;
+        }
+
+        const cursor = document.createElement('div');
+        cursor.className = 'cursor-follower';
+        document.body.appendChild(cursor);
+
+        let mouseX = 0;
+        let mouseY = 0;
+        let cursorX = 0;
+        let cursorY = 0;
+        let isHovering = false;
+        let rafId = null;
+
+        function updateCursor() {
+            // Smooth lagged movement
+            cursorX += (mouseX - cursorX) * 0.15;
+            cursorY += (mouseY - cursorY) * 0.15;
+            
+            cursor.style.left = cursorX + 'px';
+            cursor.style.top = cursorY + 'px';
+            
+            rafId = requestAnimationFrame(updateCursor);
+        }
+
+        function handleMouseMove(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            if (!cursor.classList.contains('active')) {
+                cursor.classList.add('active');
+                updateCursor();
+            }
+        }
+
+        function handleMouseEnter() {
+            isHovering = true;
+            cursor.classList.add('hover');
+        }
+
+        function handleMouseLeave() {
+            isHovering = false;
+            cursor.classList.remove('hover');
+        }
+
+        function handleMouseDown() {
+            cursor.classList.add('click');
+        }
+
+        function handleMouseUp() {
+            cursor.classList.remove('click');
+        }
+
+        // Interactive elements
+        const interactiveSelectors = 'a, button, [role="button"], input, textarea, select, .btn, .service-link, .popup-close';
+        const interactiveElements = document.querySelectorAll(interactiveSelectors);
+
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', handleMouseEnter);
+            el.addEventListener('mouseleave', handleMouseLeave);
+        });
+
+        document.addEventListener('mousemove', handleMouseMove, { passive: true });
+        document.addEventListener('mousedown', handleMouseDown);
+        document.addEventListener('mouseup', handleMouseUp);
+
+        // Hide cursor when leaving window
+        document.addEventListener('mouseleave', () => {
+            cursor.classList.remove('active');
+            if (rafId) {
+                cancelAnimationFrame(rafId);
+                rafId = null;
+            }
+        });
+
+        document.addEventListener('mouseenter', () => {
+            if (!cursor.classList.contains('active')) {
+                cursor.classList.add('active');
+                updateCursor();
+            }
+        });
+    }
+
+    // ==========================================
     // INIT
     // ==========================================
     function init() {
         initTextReveal();
         setupTestimonials();
+        setupGalleryFilter();
         animateOnScroll();
         handleNavScroll();
+        initCursorFollower();
 
         window.addEventListener('scroll', () => {
             onScroll();
