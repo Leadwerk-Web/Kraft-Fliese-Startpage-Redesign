@@ -2691,7 +2691,7 @@ a {
 }
 
 .footer-calendly {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     gap: 10px;
     margin-top: 18px;
@@ -2702,14 +2702,18 @@ a {
     font-weight: 600;
     border-radius: 999px;
     letter-spacing: 0.02em;
+    line-height: 1;
+    width: auto;
+    max-width: max-content;
     transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
     box-shadow: 0 4px 16px rgba(237, 174, 68, 0.25);
 }
 
 .footer-calendly svg {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
+    width: 18px !important;
+    height: 18px !important;
+    flex: 0 0 18px;
+    display: block;
 }
 
 .footer-calendly:hover {
