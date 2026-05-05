@@ -907,6 +907,41 @@ a {
     color: var(--color-white);
 }
 
+/* AGB / rechtliche Langtexte */
+.legal-document {
+    padding-top: clamp(32px, 5vw, 56px);
+}
+
+.legal-document-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 24px);
+    font-size: clamp(0.9375rem, 2vw, 1rem);
+    line-height: 1.65;
+    color: var(--color-text);
+}
+
+.legal-document-inner ol {
+    margin: 0 0 1.35rem;
+    padding-left: 1.35rem;
+}
+
+.legal-document-inner ol li {
+    margin-bottom: 0.45rem;
+}
+
+.legal-document-inner ol li::marker {
+    font-weight: 600;
+}
+
+.legal-document-inner p {
+    margin: 0 0 1.35rem;
+}
+
+.legal-document-inner strong {
+    font-weight: 600;
+}
+
 /* Two-column text + visual block (re-used on subpages) */
 .split-block {
     display: grid;
