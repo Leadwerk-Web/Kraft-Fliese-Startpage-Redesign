@@ -562,6 +562,19 @@ a {
     border-color: var(--color-white);
 }
 
+.btn-outline-dark {
+    background: transparent;
+    color: var(--color-primary);
+    border: 1.5px solid rgba(0, 0, 0, 0.25);
+}
+
+.btn-outline-dark:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
 .btn-sm {
     padding: 8px 20px;
     font-size: 0.8rem;
@@ -904,34 +917,181 @@ a {
     padding-top: clamp(32px, 5vw, 56px);
 }
 
-.legal-document-inner {
-    max-width: 820px;
+.legal-layout {
+    display: grid;
+    grid-template-columns: 248px 1fr;
+    gap: clamp(36px, 6vw, 88px);
+    align-items: start;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 clamp(16px, 4vw, 24px);
+}
+
+/* Sticky Inhaltsverzeichnis */
+.legal-toc {
+    position: sticky;
+    top: calc(var(--nav-height) + 28px);
+    font-size: 0.875rem;
+}
+
+.legal-toc-title {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.legal-toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+}
+
+.legal-toc li {
+    counter-increment: toc;
+    margin-bottom: 11px;
+    line-height: 1.4;
+}
+
+.legal-toc a {
+    display: flex;
+    gap: 11px;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.legal-toc a::before {
+    content: counter(toc, decimal-leading-zero);
+    flex-shrink: 0;
+    color: var(--color-accent-light);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.legal-toc a:hover {
+    color: var(--color-primary);
+}
+
+.legal-toc-meta {
+    margin-top: 22px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+}
+
+/* Dokument */
+.legal-document-inner {
+    max-width: 760px;
     font-size: clamp(0.9375rem, 2vw, 1rem);
-    line-height: 1.65;
+    line-height: 1.72;
     color: var(--color-text);
 }
 
-.legal-document-inner ol {
-    margin: 0 0 1.35rem;
-    padding-left: 1.35rem;
+.legal-section {
+    scroll-margin-top: calc(var(--nav-height) + 28px);
+    padding-bottom: clamp(28px, 4vw, 48px);
+    margin-bottom: clamp(28px, 4vw, 48px);
+    border-bottom: 1px solid var(--color-border);
 }
 
-.legal-document-inner ol li {
-    margin-bottom: 0.45rem;
+.legal-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: clamp(20px, 3vw, 32px);
+    padding-bottom: 0;
 }
 
-.legal-document-inner ol li::marker {
-    font-weight: 600;
+.legal-section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.legal-num {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    line-height: 1;
+    color: var(--color-accent-light);
+    font-variant-numeric: tabular-nums;
+}
+
+.legal-section-head h2 {
+    font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.25;
+    margin: 0;
+}
+
+.legal-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.legal-list li {
+    position: relative;
+    padding-left: 2.1rem;
+    margin-bottom: 0.95rem;
+}
+
+.legal-list li:last-child {
+    margin-bottom: 0;
+}
+
+.legal-marker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    color: var(--color-primary);
 }
 
 .legal-document-inner p {
-    margin: 0 0 1.35rem;
+    margin: 0 0 0.95rem;
+}
+
+.legal-document-inner p:last-child {
+    margin-bottom: 0;
 }
 
 .legal-document-inner strong {
     font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.legal-edition {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+@media (max-width: 860px) {
+    .legal-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .legal-toc {
+        position: static;
+        background: var(--color-bg-warm);
+        border: 1px solid var(--color-border);
+        border-radius: 16px;
+        padding: 22px 24px;
+    }
+
+    .legal-toc-title {
+        margin-bottom: 14px;
+    }
 }
 
 /* Two-column text + visual block (re-used on subpages) */
@@ -1021,6 +1181,12 @@ a {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 clamp(20px, 5vw, 60px);
+}
+
+/* Zentrierte Zweier-Gruppe (z. B. Geschäftsleitung) */
+.team-grid--duo {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 760px;
 }
 
 .team-card {
@@ -1188,6 +1354,101 @@ a {
     flex-wrap: wrap;
     margin-bottom: 48px;
     padding: 0 20px;
+}
+
+/* Zwei Filterebenen (Raum + Material) – zentriertes, modernes Segmented-Control */
+.gallery-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 56px;
+    padding: 0 20px;
+}
+
+.filter-row {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 8px 6px 6px;
+    background: var(--color-bg-warm);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    max-width: 100%;
+}
+
+.filter-label {
+    flex-shrink: 0;
+    padding: 0 10px 0 12px;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-text-muted);
+}
+
+.gallery-filters .gallery-filter {
+    margin: 0;
+    padding: 0;
+    gap: 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-filters .gallery-filter button {
+    padding: 9px 18px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: 0.84rem;
+    color: var(--color-text);
+}
+
+.gallery-filters .gallery-filter button:hover:not(.active) {
+    background: rgba(0, 0, 0, 0.055);
+    border-color: transparent;
+    color: var(--color-primary);
+}
+
+.gallery-filters .gallery-filter button.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.masonry-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+    .gallery-filters {
+        gap: 12px;
+    }
+
+    .filter-row {
+        width: 100%;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .filter-label {
+        width: 100%;
+        text-align: center;
+        padding: 2px 0 4px;
+    }
+
+    .gallery-filters .gallery-filter button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
 }
 
 .gallery-filter button {
@@ -1432,6 +1693,14 @@ a {
     justify-content: center;
 }
 
+.btn-group--center {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+}
+
 .cta-banner .btn-outline {
     border-color: rgba(255, 255, 255, 0.35);
 }
@@ -1442,6 +1711,9 @@ a {
 @media (max-width: 1024px) {
     .team-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .team-grid--duo {
+        grid-template-columns: repeat(2, 1fr);
     }
     .service-catalog,
     .news-grid,
@@ -2319,8 +2591,12 @@ a {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1.05rem;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     max-width: 440px;
+}
+
+.contact-calendar-cta {
+    margin-bottom: 40px;
 }
 
 .contact-details {
@@ -3228,5 +3504,423 @@ a {
 
     html {
         scroll-behavior: auto;
+    }
+}
+
+/* ============================================
+   CHRONIK / TIMELINE (acm.aero inspired)
+   ============================================ */
+.chronik {
+    background: var(--color-bg-warm);
+}
+
+/* Pinned scroll-track: section stays fixed while the timeline scrubs */
+.chronik-pin {
+    position: relative;
+    height: 340vh;
+}
+
+.chronik-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 84px 0 40px;
+    box-sizing: border-box;
+}
+
+.chronik .section-header {
+    text-align: center;
+    margin-bottom: clamp(40px, 5vw, 72px);
+}
+
+.chronik-timeline {
+    position: relative;
+    padding: 0 8px;
+}
+
+/* --- Rail with year ticks (scrolls; active centered under pointer) --- */
+.chronik-rail {
+    position: relative;
+    overflow: hidden;
+    padding: 12px 0 8px;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent);
+}
+
+.chronik-rail-track {
+    position: relative;
+    display: block;
+    width: max-content;
+    will-change: transform;
+    padding-bottom: 4px;
+}
+
+.chronik-rail-line,
+.chronik-rail-fill {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+}
+
+.chronik-rail-line {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.chronik-rail-fill {
+    background: var(--color-accent-light);
+}
+
+.chronik-ticks {
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+
+.chronik-tick {
+    position: relative;
+    flex: 0 0 auto;
+    width: clamp(96px, 16vw, 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-muted);
+}
+
+.chronik-tick-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-bg-warm);
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.4s ease, background-color 0.4s ease;
+}
+
+.chronik-tick-year {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.chronik-tick:hover .chronik-tick-dot {
+    border-color: var(--color-accent-light);
+}
+
+.chronik-tick.is-active .chronik-tick-dot {
+    background: var(--color-accent-light);
+    border-color: var(--color-accent-light);
+    transform: scale(1.5);
+}
+
+.chronik-tick.is-active .chronik-tick-year {
+    color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+/* --- Fixed pointer marking the centered (active) milestone --- */
+.chronik-pointer {
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin: clamp(22px, 3vw, 30px) auto clamp(26px, 4vw, 40px);
+    color: var(--color-accent-light);
+}
+
+.chronik-pointer svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Milestone cards --- */
+.chronik-viewport {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.chronik-stage {
+    display: flex;
+    gap: clamp(24px, 4vw, 56px);
+    will-change: transform;
+}
+
+.chronik-card {
+    flex: 0 0 auto;
+    width: min(440px, 78vw);
+    text-align: center;
+    opacity: 0.3;
+    transform: scale(0.92);
+    will-change: opacity, transform, filter;
+}
+
+.chronik-card.is-active {
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+}
+
+.chronik-card-year {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-accent-light);
+    margin-bottom: 16px;
+}
+
+.chronik-card-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 14px;
+}
+
+.chronik-card-text {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--color-text-light);
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* --- Controls --- */
+.chronik-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: clamp(32px, 4vw, 52px);
+}
+
+.chronik-hint {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    min-width: 64px;
+    text-align: center;
+}
+
+.chronik-arrow {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: var(--color-bg);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        border-color 0.3s ease, transform 0.3s ease;
+}
+
+.chronik-arrow svg {
+    width: 22px;
+    height: 22px;
+}
+
+.chronik-arrow:hover:not(:disabled) {
+    background: var(--color-accent-light);
+    border-color: var(--color-accent-light);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.chronik-arrow:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+@media (max-width: 900px) {
+    .chronik-pin {
+        height: 300vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .chronik-pin {
+        height: 280vh;
+    }
+    .chronik-sticky {
+        padding: 76px 0 28px;
+    }
+    .chronik-tick-year {
+        font-size: 0.72rem;
+    }
+    .chronik-card {
+        width: 84vw;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chronik-pin {
+        height: auto;
+    }
+    .chronik-sticky {
+        position: static;
+        height: auto;
+        padding: var(--section-padding) 0;
+    }
+}
+
+/* ============================================
+   GALLERY CLICK HINT + LIGHTBOX
+   ============================================ */
+.masonry-item[data-room] {
+    cursor: pointer;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(8px, 2vw, 24px);
+    padding: clamp(16px, 4vw, 48px);
+    background: rgba(15, 15, 15, 0.92);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-content {
+    margin: 0;
+    max-width: min(1100px, 92vw);
+    max-height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.96);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lightbox.is-open .lightbox-content {
+    transform: scale(1);
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 78vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-caption {
+    margin-top: 16px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.lightbox-close,
+.lightbox-nav {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.lightbox-nav {
+    width: 52px;
+    height: 52px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: clamp(16px, 3vw, 28px);
+    right: clamp(16px, 3vw, 28px);
+    width: 46px;
+    height: 46px;
+}
+
+.lightbox-close svg,
+.lightbox-nav svg {
+    width: 24px;
+    height: 24px;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+    background: var(--color-accent-light);
+    border-color: var(--color-accent-light);
+    color: #111;
+    transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+    .lightbox-nav {
+        width: 42px;
+        height: 42px;
+    }
+    .lightbox-caption {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   REVIEWS PAGE (Bewertungen) GRID
+   ============================================ */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.review-grid .testimonial-card {
+    flex: initial;
+    width: auto;
+}
+
+.google-rating--top {
+    max-width: 1180px;
+    margin: 0 auto clamp(36px, 5vw, 56px);
+}
+
+@media (max-width: 980px) {
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .review-grid {
+        grid-template-columns: 1fr;
     }
 }

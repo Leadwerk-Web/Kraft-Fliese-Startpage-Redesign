@@ -49,9 +49,25 @@
     // ==========================================
     const slides = document.querySelectorAll('.hero-slide');
     const dots = document.querySelectorAll('.progress-dot');
+    const outlineCta = document.getElementById('heroOutlineCta');
     let currentSlide = 0;
     let slideInterval;
     const SLIDE_DURATION = 6000;
+
+    // Slide-spezifische Outline-CTA (Text + Ziel)
+    const slideOutlineCtas = [
+        { text: 'Sortiment entdecken', href: '#sortiment' },
+        { text: 'Sortiment entdecken', href: '#sortiment' },
+        { text: '3D Planung anfragen', href: '#kontakt' }
+    ];
+
+    function updateOutlineCta(index) {
+        if (!outlineCta) return;
+        const cta = slideOutlineCtas[index];
+        if (!cta) return;
+        outlineCta.textContent = cta.text;
+        outlineCta.setAttribute('href', cta.href);
+    }
 
     function goToSlide(index) {
         slides.forEach(s => s.classList.remove('active'));
@@ -68,6 +84,7 @@
         currentSlide = index;
         slides[currentSlide]?.classList.add('active');
         dots[currentSlide]?.classList.add('active');
+        updateOutlineCta(currentSlide);
     }
 
     function nextSlide() {
@@ -330,27 +347,45 @@
     // GALLERY FILTER (Inspiration Subpage)
     // ==========================================
     function setupGalleryFilter() {
-        const filterButtons = document.querySelectorAll('.gallery-filter button');
+        const roomButtons = document.querySelectorAll('[data-filter-group="room"] button');
+        const materialButtons = document.querySelectorAll('[data-filter-group="material"] button');
         const items = document.querySelectorAll('.masonry-grid .masonry-item');
-        if (filterButtons.length === 0 || items.length === 0) return;
+        if (items.length === 0 || (roomButtons.length === 0 && materialButtons.length === 0)) return;
 
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+        const emptyMsg = document.querySelector('.masonry-empty');
+        let activeRoom = 'all';
+        let activeMaterial = 'all';
 
-                const filter = btn.dataset.filter;
-                items.forEach(item => {
-                    const cat = item.dataset.category;
-                    const show = filter === 'all' || cat === filter;
-                    item.style.display = show ? '' : 'none';
-                    if (show) {
-                        item.classList.remove('animated');
-                        requestAnimationFrame(() => item.classList.add('animated'));
-                    }
+        function applyFilter() {
+            let visibleCount = 0;
+            items.forEach(item => {
+                const room = item.dataset.room;
+                const material = item.dataset.material;
+                const show = (activeRoom === 'all' || room === activeRoom) &&
+                             (activeMaterial === 'all' || material === activeMaterial);
+                item.style.display = show ? '' : 'none';
+                if (show) {
+                    visibleCount++;
+                    item.classList.remove('animated');
+                    requestAnimationFrame(() => item.classList.add('animated'));
+                }
+            });
+            if (emptyMsg) emptyMsg.hidden = visibleCount > 0;
+        }
+
+        function bindGroup(buttons, setValue) {
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    setValue(btn);
+                    applyFilter();
                 });
             });
-        });
+        }
+
+        bindGroup(roomButtons, btn => { activeRoom = btn.dataset.room; });
+        bindGroup(materialButtons, btn => { activeMaterial = btn.dataset.material; });
     }
 
     // ==========================================
@@ -443,12 +478,236 @@
     }
 
     // ==========================================
+    // GALLERY LIGHTBOX
+    // ==========================================
+    function setupLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        const grid = document.querySelector('.masonry-grid');
+        if (!lightbox || !grid) return;
+
+        const imgEl = lightbox.querySelector('.lightbox-img');
+        const captionEl = lightbox.querySelector('.lightbox-caption');
+        const closeBtn = lightbox.querySelector('.lightbox-close');
+        const prevBtn = lightbox.querySelector('.lightbox-prev');
+        const nextBtn = lightbox.querySelector('.lightbox-next');
+        const allItems = Array.from(grid.querySelectorAll('.masonry-item'));
+
+        let visible = [];
+        let current = 0;
+
+        function refreshVisible() {
+            visible = allItems.filter(item => item.style.display !== 'none');
+        }
+
+        function show(index) {
+            if (visible.length === 0) return;
+            current = (index + visible.length) % visible.length;
+            const item = visible[current];
+            const img = item.querySelector('img');
+            const caption = item.querySelector('.masonry-overlay span');
+            if (!img) return;
+            imgEl.src = img.currentSrc || img.src;
+            imgEl.alt = img.alt || '';
+            captionEl.textContent = caption ? caption.textContent : '';
+        }
+
+        function open(item) {
+            refreshVisible();
+            const idx = visible.indexOf(item);
+            if (idx === -1) return;
+            show(idx);
+            lightbox.classList.add('is-open');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function close() {
+            lightbox.classList.remove('is-open');
+            lightbox.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        allItems.forEach(item => {
+            item.addEventListener('click', () => open(item));
+        });
+
+        closeBtn.addEventListener('click', close);
+        prevBtn.addEventListener('click', () => show(current - 1));
+        nextBtn.addEventListener('click', () => show(current + 1));
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) close();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('is-open')) return;
+            if (e.key === 'Escape') close();
+            else if (e.key === 'ArrowLeft') show(current - 1);
+            else if (e.key === 'ArrowRight') show(current + 1);
+        });
+    }
+
+    // ==========================================
+    // CHRONIK / TIMELINE
+    // ==========================================
+    function setupChronik() {
+        const pin = document.querySelector('[data-chronik]');
+        if (!pin) return;
+
+        const ticks = Array.from(pin.querySelectorAll('.chronik-tick'));
+        const cards = Array.from(pin.querySelectorAll('.chronik-card'));
+        const stage = pin.querySelector('.chronik-stage');
+        const viewport = pin.querySelector('.chronik-viewport');
+        const rail = pin.querySelector('.chronik-rail');
+        const railTrack = pin.querySelector('.chronik-rail-track');
+        const line = pin.querySelector('.chronik-rail-line');
+        const fill = pin.querySelector('.chronik-rail-fill');
+        const prevBtn = pin.querySelector('.chronik-arrow[data-dir="prev"]');
+        const nextBtn = pin.querySelector('.chronik-arrow[data-dir="next"]');
+        if (!stage || cards.length === 0) return;
+
+        const count = cards.length;
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const tickCenter = (i) => ticks[i].offsetLeft + ticks[i].offsetWidth / 2;
+        const cardCenter = (i) => cards[i].offsetLeft + cards[i].offsetWidth / 2;
+        const lerp = (a, b, t) => a + (b - a) * t;
+
+        function centerAt(getCenter, pos) {
+            const i = Math.max(0, Math.min(count - 1, Math.floor(pos)));
+            if (i >= count - 1) return getCenter(count - 1);
+            return lerp(getCenter(i), getCenter(i + 1), pos - i);
+        }
+
+        function layoutRail() {
+            if (!line || ticks.length === 0) return;
+            const first = tickCenter(0);
+            const last = tickCenter(ticks.length - 1);
+            line.style.left = first + 'px';
+            line.style.width = (last - first) + 'px';
+            if (fill) fill.style.left = first + 'px';
+        }
+
+        // Continuous render for a fractional position (0 .. count-1)
+        function render(pos) {
+            const x = centerAt(cardCenter, pos);
+            stage.style.transform = `translate3d(${(viewport.clientWidth / 2 - x).toFixed(2)}px, 0, 0)`;
+
+            if (railTrack && rail) {
+                const tx = centerAt(tickCenter, pos);
+                railTrack.style.transform = `translate3d(${(rail.clientWidth / 2 - tx).toFixed(2)}px, 0, 0)`;
+                if (fill) fill.style.width = Math.max(0, tx - tickCenter(0)).toFixed(2) + 'px';
+            }
+
+            cards.forEach((c, i) => {
+                const d = Math.abs(i - pos);
+                c.style.opacity = Math.max(0.16, 1 - d * 0.5).toFixed(3);
+                c.style.transform = `scale(${Math.max(0.9, 1 - Math.min(d, 1) * 0.08).toFixed(3)})`;
+                const bl = Math.min(d, 1.2);
+                c.style.filter = bl > 0.05 ? `blur(${bl.toFixed(2)}px)` : 'none';
+            });
+
+            const active = Math.round(pos);
+            cards.forEach((c, i) => c.classList.toggle('is-active', i === active));
+            ticks.forEach((t, i) => t.classList.toggle('is-active', i === active));
+            if (prevBtn) prevBtn.disabled = active <= 0;
+            if (nextBtn) nextBtn.disabled = active >= count - 1;
+        }
+
+        // --- Reduced motion: classic click/arrow stepping, no scroll pinning ---
+        if (reduceMotion) {
+            let current = 0;
+            const activate = (index) => { current = Math.max(0, Math.min(count - 1, index)); render(current); };
+            ticks.forEach((tick) => tick.addEventListener('click', () => activate(parseInt(tick.dataset.index, 10))));
+            if (prevBtn) prevBtn.addEventListener('click', () => activate(current - 1));
+            if (nextBtn) nextBtn.addEventListener('click', () => activate(current + 1));
+            pin.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') activate(current - 1);
+                else if (e.key === 'ArrowRight') activate(current + 1);
+            });
+            window.addEventListener('resize', () => { layoutRail(); render(current); }, { passive: true });
+            requestAnimationFrame(() => { layoutRail(); render(0); });
+            return;
+        }
+
+        // --- Scroll-driven (pinned): milestones slide right→left while scrolling ---
+        let disp = 0, target = 0, ticking = false, inView = false;
+
+        const scrollDistance = () => Math.max(1, pin.offsetHeight - window.innerHeight);
+
+        function readTarget() {
+            const total = scrollDistance();
+            const top = pin.getBoundingClientRect().top;
+            const scrolled = Math.min(Math.max(-top, 0), total);
+            target = (scrolled / total) * (count - 1);
+        }
+
+        function frame() {
+            readTarget();
+            disp += (target - disp) * 0.16;
+            if (Math.abs(target - disp) < 0.0008) disp = target;
+            render(disp);
+            if (Math.abs(target - disp) >= 0.0008) {
+                requestAnimationFrame(frame);
+            } else {
+                ticking = false;
+            }
+        }
+
+        function ensureLoop() {
+            if (!ticking) { ticking = true; requestAnimationFrame(frame); }
+        }
+
+        function scrollToIndex(i) {
+            const idx = Math.max(0, Math.min(count - 1, i));
+            const total = scrollDistance();
+            const p = count > 1 ? idx / (count - 1) : 0;
+            const y = window.scrollY + pin.getBoundingClientRect().top + p * total;
+            window.scrollTo({ top: Math.round(y), behavior: 'smooth' });
+        }
+
+        ticks.forEach((tick) => tick.addEventListener('click', () => scrollToIndex(parseInt(tick.dataset.index, 10))));
+        if (prevBtn) prevBtn.addEventListener('click', () => scrollToIndex(Math.round(disp) - 1));
+        if (nextBtn) nextBtn.addEventListener('click', () => scrollToIndex(Math.round(disp) + 1));
+        pin.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') scrollToIndex(Math.round(disp) - 1);
+            else if (e.key === 'ArrowRight') scrollToIndex(Math.round(disp) + 1);
+        });
+
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((e) => { inView = e.isIntersecting; if (inView) ensureLoop(); });
+            }, { threshold: 0 });
+            io.observe(pin);
+        } else {
+            inView = true;
+        }
+
+        window.addEventListener('scroll', ensureLoop, { passive: true });
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => { layoutRail(); ensureLoop(); }, 120);
+        }, { passive: true });
+
+        requestAnimationFrame(() => {
+            layoutRail();
+            readTarget();
+            disp = target;
+            render(disp);
+            ensureLoop();
+        });
+    }
+
+    // ==========================================
     // INIT
     // ==========================================
     function init() {
         initTextReveal();
         setupTestimonials();
         setupGalleryFilter();
+        setupLightbox();
+        setupChronik();
         animateOnScroll();
         handleNavScroll();
         initCursorFollower();

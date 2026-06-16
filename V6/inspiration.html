@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
-    <link rel="icon" href="kf_logo.png" type="image/png" sizes="any">
-    <link rel="apple-touch-icon" href="kf_logo.png">
+    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="favicon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <title>Inspiration & Wohnideen | Kraft Fliesen GmbH – Galerie & News</title>
     <meta name="description" content="Entdecken Sie Wohnideen, Inspirationen und News rund um Fliesen, Naturstein, Vinyl und Holzböden. Unsere Galerie zeigt Ihnen, was möglich ist.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,7 @@
                 <li><a href="unternehmen.html">Unternehmen</a></li>
                 <li><a href="service.html">Service</a></li>
                 <li><a href="inspiration.html" class="active">Inspiration</a></li>
-                <li><a href="index.html#bewertungen">Bewertungen</a></li>
+                <li><a href="bewertungen.html">Bewertungen</a></li>
                 <li><a href="https://calendly.com/timkraft-hp76/beratung?embed_domain=kraft-fliesen.de&amp;embed_type=Inline&amp;hide_gdpr_banner=1" target="_blank" rel="noopener noreferrer" class="nav-cta">Beratungstermin</a></li>
             </ul>
         </div>
@@ -38,7 +39,7 @@
 
     <!-- Subpage Hero -->
     <section class="subpage-hero">
-        <div class="subpage-hero-bg" style="background-image: url('assets/images/inspo-02-wohnen.jpg')"></div>
+        <div class="subpage-hero-bg" style="background-image: url('assets/images/insp-wohnen-gruen.jpg')"></div>
         <div class="subpage-hero-inner">
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="index.html">Startseite</a>
@@ -59,96 +60,148 @@
             <p class="section-lead" data-animate>Lassen Sie sich von realisierten Projekten, trendigen Kombinationen und hochwertigen Oberflächen inspirieren. Klicken Sie ein Bild an, um mehr zu erfahren.</p>
         </div>
 
-        <div class="gallery-filter" data-animate>
-            <button class="active" data-filter="all">Alle</button>
-            <button data-filter="bad">Bad</button>
-            <button data-filter="wohnen">Wohnen</button>
-            <button data-filter="fliese">Fliesen</button>
-            <button data-filter="keramik">Keramik</button>
+        <div class="gallery-filters" data-animate>
+            <div class="filter-row">
+                <span class="filter-label">Raum</span>
+                <div class="gallery-filter" data-filter-group="room" role="group" aria-label="Nach Raum filtern">
+                    <button class="active" data-room="all">Alle</button>
+                    <button data-room="bad">Bad</button>
+                    <button data-room="wohnbereich">Wohnbereich</button>
+                    <button data-room="kueche">Küche</button>
+                    <button data-room="outdoor">Outdoor</button>
+                    <button data-room="schlafen">Schlafen</button>
+                </div>
+            </div>
+            <div class="filter-row">
+                <span class="filter-label">Material</span>
+                <div class="gallery-filter" data-filter-group="material" role="group" aria-label="Nach Material filtern">
+                    <button class="active" data-material="all">Alle</button>
+                    <button data-material="fliesen">Fliesen</button>
+                    <button data-material="holz">Holz</button>
+                    <button data-material="naturstein">Naturstein</button>
+                    <button data-material="vinyl">Vinyl</button>
+                </div>
+            </div>
         </div>
 
         <div class="masonry-grid">
-            <div class="masonry-item masonry-item--tall" data-animate data-category="bad">
-                <img src="assets/images/inspo-01-bad.jpg" alt="Modernes Badezimmer – Wohnidee" loading="lazy" width="845" height="684">
+            <div class="masonry-item masonry-item--wide" data-animate data-room="bad" data-material="fliesen">
+                <img src="assets/images/insp-bad-walkin.jpg" alt="Modernes Bad mit Walk-in-Dusche und Doppelwaschtisch" loading="lazy" width="1400" height="990">
                 <div class="masonry-overlay">
-                    <span>Modernes Badezimmer</span>
+                    <span>Walk-in-Dusche</span>
                 </div>
             </div>
-            <div class="masonry-item" data-animate data-delay="100" data-category="wohnen">
-                <img src="assets/images/inspo-02-wohnen.jpg" alt="Raumgestaltung Fliesen und Kombinationen" loading="lazy" width="845" height="684">
+            <div class="masonry-item masonry-item--tall" data-animate data-delay="100" data-room="bad" data-material="fliesen">
+                <img src="assets/images/insp-bad-wanne.jpg" alt="Bad mit freistehender Wanne und Holzpaneel-Wand" loading="lazy" width="990" height="1400">
                 <div class="masonry-overlay">
-                    <span>Oasis &amp; Kombinationen</span>
+                    <span>Freistehende Wanne</span>
                 </div>
             </div>
-            <div class="masonry-item" data-animate data-delay="200" data-category="fliese">
-                <img src="assets/images/inspo-03-fliese.jpg" alt="Keramik- und Fliesendesign" loading="lazy" width="1500" height="1500">
+            <div class="masonry-item" data-animate data-delay="200" data-room="bad" data-material="fliesen">
+                <img src="assets/images/insp-bad-natur.jpg" alt="Helles Bad mit Holzakzenten und bodengleicher Dusche" loading="lazy" width="1400" height="990">
                 <div class="masonry-overlay">
-                    <span>Factory-Look Keramik</span>
+                    <span>Bad mit Holzakzenten</span>
                 </div>
             </div>
-            <div class="masonry-item masonry-item--wide" data-animate data-delay="300" data-category="fliese">
-                <img src="assets/images/inspo-04-detail.jpg" alt="Oberflächen und Details" loading="lazy" width="845" height="684">
+            <div class="masonry-item masonry-item--tall" data-animate data-room="wohnbereich" data-material="holz">
+                <img src="assets/images/insp-wohnen-lounge.jpg" alt="Wohnbereich mit Lounge-Sessel auf warmem Holzboden" loading="lazy" width="990" height="1400">
                 <div class="masonry-overlay">
-                    <span>Struktur &amp; Oberfläche</span>
+                    <span>Lounge-Wohnen</span>
                 </div>
             </div>
-            <div class="masonry-item masonry-item--tall" data-animate data-delay="100" data-category="wohnen">
-                <img src="assets/images/inspo-05-langformat.jpg" alt="Langformat-Fliesen" loading="lazy" width="845" height="684">
+            <div class="masonry-item" data-animate data-delay="100" data-room="wohnbereich" data-material="holz">
+                <img src="assets/images/insp-wohnen-modern.jpg" alt="Modernes Wohnzimmer mit Holzboden in Eichenoptik" loading="lazy" width="1024" height="724">
                 <div class="masonry-overlay">
-                    <span>Langformat Almond</span>
+                    <span>Modernes Wohnzimmer</span>
                 </div>
             </div>
-            <div class="masonry-item" data-animate data-delay="200" data-category="keramik">
-                <img src="assets/images/inspo-06-keramik.jpg" alt="Keramik und Nachhaltigkeit" loading="lazy" width="1357" height="1920">
+            <div class="masonry-item masonry-item--wide" data-animate data-delay="200" data-room="wohnbereich" data-material="fliesen">
+                <img src="assets/images/insp-wohnen-gruen.jpg" alt="Wohnbereich in Grüntönen mit großformatigen Bodenfliesen" loading="lazy" width="1400" height="990">
                 <div class="masonry-overlay">
-                    <span>Keramik im Wandel</span>
+                    <span>Wohnen in Grün</span>
                 </div>
             </div>
-            <div class="masonry-item" data-animate data-delay="300" data-category="keramik">
-                <img src="assets/images/inspo-07-news.jpg" alt="Keramik Orion News" loading="lazy" width="1810" height="2560">
+            <div class="masonry-item" data-animate data-delay="300" data-room="wohnbereich" data-material="naturstein">
+                <img src="assets/images/insp-wohnen-marmor.jpg" alt="Esstisch mit Marmorplatte in Naturstein-Optik" loading="lazy" width="1400" height="990">
                 <div class="masonry-overlay">
-                    <span>Wohngesund mit Keramik</span>
+                    <span>Marmor-Eleganz</span>
                 </div>
             </div>
-            <div class="masonry-item masonry-item--wide" data-animate data-delay="400" data-category="fliese">
-                <img src="assets/images/inspo-08-thinsation.jpg" alt="Thinsation Wohnidee" loading="lazy" width="935" height="1600">
+            <div class="masonry-item masonry-item--tall" data-animate data-room="wohnbereich" data-material="vinyl">
+                <img src="assets/images/insp-wohnen-vinyl.jpg" alt="Wohnraum mit Design-Vinyl in Holzoptik" loading="lazy" width="990" height="1400">
                 <div class="masonry-overlay">
-                    <span>Thinsation</span>
+                    <span>Design-Vinyl Wohnen</span>
                 </div>
             </div>
-            <div class="masonry-item" data-animate data-category="bad">
-                <img src="assets/images/sortiment-naturstein.jpg" alt="Naturstein im Bad" loading="lazy" width="845" height="684">
+            <div class="masonry-item" data-animate data-delay="100" data-room="wohnbereich" data-material="vinyl">
+                <img src="assets/images/insp-wohnen-licht.jpg" alt="Lichtdurchfluteter Raum mit Vinylboden in Holzoptik" loading="lazy" width="1400" height="1400">
                 <div class="masonry-overlay">
-                    <span>Naturstein-Eleganz</span>
+                    <span>Lichtdurchflutet</span>
                 </div>
             </div>
-            <div class="masonry-item" data-animate data-delay="100" data-category="wohnen">
-                <img src="assets/images/sortiment-holz.jpg" alt="Holzboden im Wohnzimmer" loading="lazy" width="845" height="684">
+            <div class="masonry-item masonry-item--tall" data-animate data-delay="200" data-room="kueche" data-material="holz">
+                <img src="assets/images/insp-kueche-insel.jpg" alt="Küche mit blauer Kochinsel und Holzboden" loading="lazy" width="990" height="1400">
                 <div class="masonry-overlay">
-                    <span>Warmer Holzboden</span>
+                    <span>Küche mit Kochinsel</span>
                 </div>
             </div>
-            <div class="masonry-item masonry-item--tall" data-animate data-delay="200" data-category="fliese">
-                <img src="assets/images/sortiment-fliesen.jpg" alt="Moderne Fliesenvielfalt" loading="lazy" width="1026" height="1030">
+            <div class="masonry-item" data-animate data-delay="300" data-room="kueche" data-material="fliesen">
+                <img src="assets/images/insp-kueche-bar.jpg" alt="Bar- und Loungebereich mit Keramik-Bodenfliesen" loading="lazy" width="1024" height="724">
                 <div class="masonry-overlay">
-                    <span>Fliesen-Vielfalt</span>
+                    <span>Bar &amp; Lounge</span>
                 </div>
             </div>
-            <div class="masonry-item" data-animate data-delay="300" data-category="wohnen">
-                <img src="assets/images/sortiment-terrasse.jpg" alt="Terrasse gestaltet mit Keramik" loading="lazy" width="845" height="684">
+            <div class="masonry-item masonry-item--wide" data-animate data-room="outdoor" data-material="fliesen">
+                <img src="assets/images/insp-outdoor-garten.jpg" alt="Terrasse mit Loungemöbeln und Keramik-Terrassenplatten im Grünen" loading="lazy" width="1400" height="990">
                 <div class="masonry-overlay">
-                    <span>Outdoor-Living</span>
+                    <span>Terrasse im Grünen</span>
                 </div>
             </div>
+            <div class="masonry-item" data-animate data-delay="100" data-room="outdoor" data-material="fliesen">
+                <img src="assets/images/insp-outdoor-anthrazit.jpg" alt="Terrasse mit anthrazitfarbenen Keramikplatten" loading="lazy" width="1400" height="870">
+                <div class="masonry-overlay">
+                    <span>Terrasse Anthrazit</span>
+                </div>
+            </div>
+            <div class="masonry-item" data-animate data-delay="200" data-room="outdoor" data-material="fliesen">
+                <img src="assets/images/insp-outdoor-holz.jpg" alt="Helle Terrasse mit großformatigen Keramikplatten" loading="lazy" width="1400" height="870">
+                <div class="masonry-overlay">
+                    <span>Terrasse hell</span>
+                </div>
+            </div>
+            <div class="masonry-item masonry-item--wide" data-animate data-delay="300" data-room="schlafen" data-material="holz">
+                <img src="assets/images/insp-schlafen.jpg" alt="Schlafzimmer mit warmem Holzboden in Eichenoptik" loading="lazy" width="1400" height="1050">
+                <div class="masonry-overlay">
+                    <span>Schlafkomfort</span>
+                </div>
+            </div>
+            <p class="masonry-empty" hidden>Für diese Kombination sind aktuell keine Bilder vorhanden. Bitte passen Sie die Filter an.</p>
         </div>
     </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Bildansicht">
+        <button class="lightbox-close" type="button" aria-label="Schließen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" type="button" aria-label="Vorheriges Bild">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <figure class="lightbox-content">
+            <img class="lightbox-img" src="" alt="">
+            <figcaption class="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-nav lightbox-next" type="button" aria-label="Nächstes Bild">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+    </div>
 
     <!-- Aktuelles / News -->
     <section class="subpage-section subpage-section--warm section-tile-pattern">
         <div class="section-header">
             <span class="section-tag" data-animate>News und Updates</span>
-            <h2 class="section-title" data-animate>Aktuelles aus der<br>Keramikwelt.</h2>
-            <p class="section-lead" data-animate>Keramik im Wandel – die neusten Trends, Tipps und Hintergründe rund um moderne Bodenbeläge, gesundes Wohnen und nachhaltige Materialien.</p>
+            <h2 class="section-title" data-animate>Aktuelles aus der Welt von<br>Wand- und Bodenbelägen.</h2>
+            <p class="section-lead" data-animate>Wohnen im Wandel – die neusten Trends, Tipps und Hintergründe rund um moderne Bodenbeläge, gesundes Wohnen und nachhaltige Materialien.</p>
         </div>
 
         <div class="news-grid">
@@ -215,27 +268,13 @@
         </div>
     </section>
 
-    <!-- Aktuelle Angebote Hint -->
-    <section class="subpage-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-animate>Stets informiert</span>
-                <h2 class="section-title" data-animate>Aktuelle Angebote.</h2>
-                <p class="section-lead" data-animate>Hier bieten wir aktuelle <strong>Rest- und Sonderposten zu Spitzenpreisen</strong> an – nur solange der Vorrat reicht! Sprechen Sie uns direkt in der Ausstellung an.</p>
-            </div>
-            <div style="text-align: center;">
-                <a href="index.html#kontakt" class="btn btn-primary">Angebote anfragen</a>
-            </div>
-        </div>
-    </section>
-
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
             <h2>Ihre Inspiration wartet.</h2>
             <p>Kommen Sie in unsere 800 m² Ausstellung und erleben Sie Materialien, Farben und Formate live – das ersetzt jede Online-Galerie.</p>
             <div class="btn-group">
-                <a href="index.html#kontakt" class="btn btn-primary">Ausstellung besuchen</a>
+                <a href="index.html#kontakt" class="btn btn-outline">Ausstellung besuchen</a>
                 <a href="service.html" class="btn btn-outline">3D-Planung entdecken</a>
             </div>
         </div>
@@ -273,7 +312,7 @@
                         <li><a href="unternehmen.html">Unternehmen</a></li>
                         <li><a href="service.html">Service</a></li>
                         <li><a href="inspiration.html">Inspiration</a></li>
-                        <li><a href="index.html#bewertungen">Bewertungen</a></li>
+                        <li><a href="bewertungen.html">Bewertungen</a></li>
                         <li><a href="agb.html">AGB</a></li>
                         <li><a href="index.html#kontakt">Kontakt</a></li>
                     </ul>
@@ -281,12 +320,12 @@
                 <div class="footer-links">
                     <h4>Produkte</h4>
                     <ul>
-                        <li><a href="sortiment.html">Wand- & Bodenfliesen</a></li>
-                        <li><a href="sortiment.html">Naturstein</a></li>
-                        <li><a href="sortiment.html">Design-Vinyl</a></li>
-                        <li><a href="sortiment.html">Holzböden & Parkett</a></li>
-                        <li><a href="sortiment.html">Terrassenplatten</a></li>
-                        <li><a href="sortiment.html">Wandverkleidung</a></li>
+                        <li><a href="https://sortiment.kraft-fliesen.de" target="_blank" rel="noopener noreferrer">Wand- & Bodenfliesen</a></li>
+                        <li><a href="https://sortiment.kraft-fliesen.de" target="_blank" rel="noopener noreferrer">Naturstein</a></li>
+                        <li><a href="https://sortiment.kraft-fliesen.de" target="_blank" rel="noopener noreferrer">Design-Vinyl</a></li>
+                        <li><a href="https://sortiment.kraft-fliesen.de" target="_blank" rel="noopener noreferrer">Holzböden & Parkett</a></li>
+                        <li><a href="https://sortiment.kraft-fliesen.de" target="_blank" rel="noopener noreferrer">Terrassenplatten</a></li>
+                        <li><a href="https://sortiment.kraft-fliesen.de" target="_blank" rel="noopener noreferrer">Wandverkleidung</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -295,8 +334,8 @@
                     <p><a href="tel:072407285">07240 / 7285</a></p>
                     <p><a href="mailto:info@kraft-fliesen.de">info@kraft-fliesen.de</a></p>
                     <p class="footer-hours">
-                        <strong>Mo – Fr</strong> 08:00 – 12:00 &amp; 13:30 – 18:00<br>
-                        <strong>Sa</strong> 08:00 – 13:00
+                        <strong>Mo – Fr</strong> 07:30 – 18:00 durchgehend<br>
+                        <strong>Sa</strong> 08:00 – 12:00
                     </p>
                     <a href="https://www.google.com/maps/dir/?api=1&amp;destination=48.9952335%2C8.5364113&amp;travelmode=driving" class="footer-route" target="_blank" rel="noopener noreferrer" aria-label="Google Maps: Route zur Ausstellung planen">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
