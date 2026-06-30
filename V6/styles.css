@@ -3517,7 +3517,7 @@ a {
 /* Pinned scroll-track: section stays fixed while the timeline scrubs */
 .chronik-pin {
     position: relative;
-    height: 340vh;
+    height: 420vh;
 }
 
 .chronik-sticky {
@@ -3659,11 +3659,27 @@ a {
 
 .chronik-card {
     flex: 0 0 auto;
-    width: min(440px, 78vw);
+    width: min(480px, 82vw);
     text-align: center;
     opacity: 0.3;
     transform: scale(0.92);
     will-change: opacity, transform, filter;
+}
+
+.chronik-card-visual {
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.chronik-card-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .chronik-card.is-active {
@@ -3749,15 +3765,79 @@ a {
     cursor: default;
 }
 
+@media (min-width: 1200px) {
+    .chronik-sticky {
+        justify-content: flex-start;
+        padding: 76px 0 20px;
+    }
+
+    .chronik .section-header {
+        margin-bottom: 24px;
+    }
+
+    .chronik-rail {
+        padding: 6px 0 2px;
+    }
+
+    .chronik-tick {
+        gap: 10px;
+    }
+
+    .chronik-pointer {
+        width: 22px;
+        height: 22px;
+        margin: 8px auto 10px;
+    }
+
+    .chronik-stage {
+        gap: 36px;
+    }
+
+    .chronik-card {
+        width: min(420px, 34vw);
+    }
+
+    .chronik-card-visual {
+        aspect-ratio: 2 / 1;
+        margin-bottom: 12px;
+    }
+
+    .chronik-card-year {
+        font-size: clamp(2rem, 2.5vw, 2.6rem);
+        margin-bottom: 8px;
+    }
+
+    .chronik-card-title {
+        margin-bottom: 6px;
+        font-size: 1.25rem;
+    }
+
+    .chronik-card-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        max-width: 380px;
+    }
+
+    .chronik-controls {
+        margin-top: 18px;
+        gap: 14px;
+    }
+
+    .chronik-arrow {
+        width: 46px;
+        height: 46px;
+    }
+}
+
 @media (max-width: 900px) {
     .chronik-pin {
-        height: 300vh;
+        height: 380vh;
     }
 }
 
 @media (max-width: 600px) {
     .chronik-pin {
-        height: 280vh;
+        height: 360vh;
     }
     .chronik-sticky {
         padding: 76px 0 28px;
