@@ -3882,14 +3882,66 @@ a {
 }
 
 @media (max-width: 768px) {
+    .chronik {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .chronik-pin {
         height: auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
     }
 
     .chronik-sticky {
         position: static;
         height: auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
         padding: var(--section-padding) 0;
+    }
+
+    .chronik-sticky > .container,
+    .chronik-timeline,
+    .chronik-rail,
+    .chronik-viewport {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .chronik-timeline {
+        padding-inline: 0;
+    }
+
+    .chronik-rail,
+    .chronik-viewport {
+        overflow: hidden;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .chronik-stage {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        gap: 16px;
+    }
+
+    .chronik-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding-inline: 8px;
+    }
+
+    .chronik-card-title,
+    .chronik-card-text {
+        max-width: 100%;
+        overflow-wrap: anywhere;
     }
 
     .chronik .section-header [data-animate],
@@ -3904,11 +3956,15 @@ a {
 }
 
 @media (max-width: 600px) {
+    .chronik-tick {
+        width: clamp(72px, 24vw, 96px);
+    }
+
     .chronik-tick-year {
         font-size: 0.72rem;
     }
     .chronik-card {
-        width: 84vw;
+        width: 100%;
     }
     .chronik-sticky {
         padding: 76px 0 28px;
