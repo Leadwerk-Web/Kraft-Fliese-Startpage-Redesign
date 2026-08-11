@@ -1,0 +1,110 @@
+[
+  {
+    "id": "0",
+    "fields": {
+      "1": {
+        "id": "1",
+        "type": "name",
+        "format": "simple",
+        "label": "Name",
+        "required": "1",
+        "size": "large",
+        "placeholder": "Ihr Name",
+        "css": "wpforms-one-half wpforms-first"
+      },
+      "2": {
+        "id": "2",
+        "type": "email",
+        "label": "E-Mail",
+        "required": "1",
+        "size": "large",
+        "placeholder": "Ihre E-Mail-Adresse",
+        "css": "wpforms-one-half"
+      },
+      "3": {
+        "id": "3",
+        "type": "text",
+        "label": "Telefon",
+        "required": "0",
+        "size": "large",
+        "placeholder": "Ihre Telefonnummer",
+        "css": "wpforms-one-half wpforms-first"
+      },
+      "4": {
+        "id": "4",
+        "type": "select",
+        "label": "Interesse",
+        "required": "0",
+        "size": "large",
+        "placeholder": "Bitte wählen…",
+        "css": "wpforms-one-half",
+        "choices": {
+          "1": {"label": "Wand- & Bodenfliesen", "value": "fliesen"},
+          "2": {"label": "Naturstein", "value": "naturstein"},
+          "3": {"label": "Terrasse & Balkon", "value": "terrasse"},
+          "4": {"label": "Design-Vinyl", "value": "vinyl"},
+          "5": {"label": "Holzböden & Parkett", "value": "holz"},
+          "6": {"label": "Wandverkleidung", "value": "wandverkleidung"},
+          "7": {"label": "3D-Raumplanung", "value": "3d"},
+          "8": {"label": "Sonstiges", "value": "sonstiges"}
+        },
+        "show_values": "1"
+      },
+      "5": {
+        "id": "5",
+        "type": "textarea",
+        "label": "Nachricht",
+        "required": "1",
+        "size": "large",
+        "placeholder": "Beschreiben Sie Ihr Projekt…",
+        "limit_count": "2000",
+        "limit_mode": "characters"
+      },
+      "6": {
+        "id": "6",
+        "type": "gdpr-checkbox",
+        "label": "Datenschutz",
+        "required": "1",
+        "choices": {
+          "1": {
+            "label": "Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzerklärung zu.",
+            "value": "",
+            "default": ""
+          }
+        }
+      }
+    },
+    "field_id": "7",
+    "settings": {
+      "form_title": "Kraft Fliesen Kontaktformular",
+      "form_desc": "Kontakt- und Projektanfrage für die Kraft Fliesen GmbH",
+      "submit_text": "Nachricht senden",
+      "submit_text_processing": "Wird gesendet…",
+      "antispam_v3": "1",
+      "notification_enable": "1",
+      "notifications": {
+        "1": {
+          "notification_name": "Kraft Fliesen – neue Anfrage",
+          "email": "{admin_email}",
+          "subject": "Neue Website-Anfrage: {field_id=\"1\"}",
+          "sender_name": "Kraft Fliesen Website",
+          "sender_address": "{admin_email}",
+          "replyto": "{field_id=\"2\"}",
+          "message": "{all_fields}"
+        }
+      },
+      "confirmations": {
+        "1": {
+          "name": "Danke-Seite",
+          "type": "redirect",
+          "redirect": "/danke/",
+          "message_scroll": "1"
+        }
+      },
+      "ajax_submit": "1"
+    },
+    "meta": {
+      "template": "blank"
+    }
+  }
+]

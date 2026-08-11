@@ -1,0 +1,141 @@
+{
+  "version": "6",
+  "site_title": "Kraft Fliesen GmbH",
+  "site_tagline": "Ihr Fliesenexperte zwischen Karlsruhe und Pforzheim – Familienunternehmen seit 1974.",
+  "pages": [
+    {
+      "source_key": "kraft-home",
+      "source_file": "index.html",
+      "slug": "home",
+      "title": "Startseite",
+      "is_front": true,
+      "seo": {
+        "focus_keyphrase": "Kraft Fliesen",
+        "title": "Kraft Fliesen – Fliesenexperte in Pfinztal seit 1974",
+        "meta_description": "Kraft Fliesen ist Ihr Fliesenexperte in Pfinztal: 800 m² Ausstellung, persönliche Beratung und über 50 Jahre Erfahrung für Böden und Wände."
+      }
+    },
+    {
+      "source_key": "kraft-sortiment",
+      "source_file": "sortiment.html",
+      "slug": "sortiment",
+      "title": "Sortiment",
+      "seo": {
+        "focus_keyphrase": "Unser Sortiment",
+        "title": "Unser Sortiment – Fliesen, Naturstein, Vinyl und mehr",
+        "meta_description": "Unser Sortiment umfasst Fliesen, Naturstein, Terrassenplatten, Design-Vinyl, Holzböden und Wandverkleidungen – auf 800 m² in Pfinztal."
+      }
+    },
+    {
+      "source_key": "kraft-warum-wir",
+      "source_file": "warum-wir.html",
+      "slug": "warum-wir",
+      "title": "Warum wir",
+      "seo": {
+        "focus_keyphrase": "Warum Kraft Fliesen",
+        "title": "Warum Kraft Fliesen? 8 überzeugende Vorteile",
+        "meta_description": "Warum Kraft Fliesen? Profitieren Sie von über 50 Jahren Erfahrung, 800 m² Ausstellung, persönlicher Beratung, 3D-Planung und flexibler Lieferung."
+      }
+    },
+    {
+      "source_key": "kraft-unternehmen",
+      "source_file": "unternehmen.html",
+      "slug": "unternehmen",
+      "title": "Unternehmen",
+      "seo": {
+        "focus_keyphrase": "Familienbetrieb seit 1974",
+        "title": "Familienbetrieb seit 1974 – Kraft Fliesen Pfinztal",
+        "meta_description": "Familienbetrieb seit 1974: Lernen Sie Kraft Fliesen, unser Team, unsere Werte und unsere Geschichte als Fliesenexperte in Pfinztal kennen."
+      }
+    },
+    {
+      "source_key": "kraft-service",
+      "source_file": "service.html",
+      "slug": "service",
+      "title": "Service",
+      "seo": {
+        "focus_keyphrase": "Unser Service",
+        "title": "Unser Service – Beratung, 3D-Planung und Lieferung",
+        "meta_description": "Unser Service: persönliche Beratung, 3D-Raumplanung, Bemusterung, flexible Lieferung, Pflegeempfehlungen, Leihgeräte und Bohrservice."
+      }
+    },
+    {
+      "source_key": "kraft-inspiration",
+      "source_file": "inspiration.html",
+      "slug": "inspiration",
+      "title": "Inspiration",
+      "seo": {
+        "focus_keyphrase": "Inspiration für Ihr Zuhause",
+        "title": "Inspiration für Ihr Zuhause – Wohnideen mit Fliesen",
+        "meta_description": "Inspiration für Ihr Zuhause: Entdecken Sie Wohnideen, Referenzen und Trends rund um Fliesen, Naturstein, Design-Vinyl und Holzböden."
+      }
+    },
+    {
+      "source_key": "kraft-bewertungen",
+      "source_file": "bewertungen.html",
+      "slug": "bewertungen",
+      "title": "Bewertungen",
+      "seo": {
+        "focus_keyphrase": "Originalbewertungen von Google",
+        "title": "Originalbewertungen von Google – Kraft Fliesen",
+        "meta_description": "Originalbewertungen von Google zeigen die Erfahrungen unserer Kunden mit Beratung, Auswahl, Lieferung und Service bei Kraft Fliesen in Pfinztal."
+      }
+    },
+    {
+      "source_key": "kraft-agb",
+      "source_file": "agb.html",
+      "slug": "agb",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "seo": {
+        "focus_keyphrase": "Allgemeine Geschäftsbedingungen",
+        "title": "Allgemeine Geschäftsbedingungen – Kraft Fliesen",
+        "meta_description": "Allgemeine Geschäftsbedingungen der Kraft Fliesen GmbH: Liefer- und Zahlungsbedingungen, Eigentumsvorbehalt und Gerichtsstand. Stand April 2008."
+      }
+    },
+    {
+      "source_key": "kraft-danke",
+      "source_file": "danke.html",
+      "slug": "danke",
+      "title": "Vielen Dank",
+      "seo": {
+        "focus_keyphrase": "Vielen Dank für deine Nachricht",
+        "title": "Vielen Dank für deine Nachricht – Kraft Fliesen",
+        "meta_description": "Vielen Dank für deine Nachricht. Das Team der Kraft Fliesen GmbH prüft deine Anfrage und meldet sich so bald wie möglich bei dir.",
+        "noindex": true
+      }
+    },
+    {
+      "source_key": "kraft-legal",
+      "source_file": "legal.html",
+      "slug": "rechtliches",
+      "title": "Rechtliche Informationen",
+      "seo": {
+        "focus_keyphrase": "Rechtliche Informationen",
+        "title": "Rechtliche Informationen – Kraft Fliesen GmbH",
+        "meta_description": "Rechtliche Informationen der Kraft Fliesen GmbH: zentrale Übersicht zu Impressum, Datenschutzerklärung und Allgemeinen Geschäftsbedingungen."
+      }
+    },
+    {
+      "source_key": "kraft-impressum",
+      "source_file": "impressum.html",
+      "slug": "impressum",
+      "title": "Impressum",
+      "seo": {
+        "focus_keyphrase": "Impressum",
+        "title": "Impressum – Kraft Fliesen GmbH in Pfinztal",
+        "meta_description": "Impressum der Kraft Fliesen GmbH mit Anbieterkennzeichnung, Geschäftsführung, Registerdaten und Kontaktinformationen in Pfinztal-Söllingen."
+      }
+    },
+    {
+      "source_key": "kraft-datenschutz",
+      "source_file": "datenschutz.html",
+      "slug": "datenschutz",
+      "title": "Datenschutzerklärung",
+      "seo": {
+        "focus_keyphrase": "Datenschutzerklärung",
+        "title": "Datenschutzerklärung – Kraft Fliesen GmbH",
+        "meta_description": "Datenschutzerklärung der Kraft Fliesen GmbH mit Informationen zu Kontaktformular, Hosting, externen Diensten, Cookies und Betroffenenrechten."
+      }
+    }
+  ]
+}

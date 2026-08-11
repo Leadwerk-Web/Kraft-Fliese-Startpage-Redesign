@@ -1,0 +1,717 @@
+{
+  "created_at": "2026-08-11T18:38:41",
+  "root": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62",
+  "total_images": 71,
+  "images": [
+    {
+      "filename": "apple-touch-icon.png",
+      "stem": "apple-touch-icon",
+      "extension": ".png",
+      "relative_path": "apple-touch-icon.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/apple-touch-icon.png",
+      "target_webp_relative_path": "apple-touch-icon.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/apple-touch-icon.webp",
+      "size_bytes": 9397
+    },
+    {
+      "filename": "about-familiaer-od.jpg",
+      "stem": "about-familiaer-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/about-familiaer-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/about-familiaer-od.jpg",
+      "target_webp_relative_path": "assets/images/about-familiaer-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/about-familiaer-od.webp",
+      "size_bytes": 166482
+    },
+    {
+      "filename": "about-familienbetrieb-od.jpg",
+      "stem": "about-familienbetrieb-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/about-familienbetrieb-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/about-familienbetrieb-od.jpg",
+      "target_webp_relative_path": "assets/images/about-familienbetrieb-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/about-familienbetrieb-od.webp",
+      "size_bytes": 564002
+    },
+    {
+      "filename": "counter-bg.jpg",
+      "stem": "counter-bg",
+      "extension": ".jpg",
+      "relative_path": "assets/images/counter-bg.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/counter-bg.jpg",
+      "target_webp_relative_path": "assets/images/counter-bg.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/counter-bg.webp",
+      "size_bytes": 168383
+    },
+    {
+      "filename": "hero-3d-planung.jpg",
+      "stem": "hero-3d-planung",
+      "extension": ".jpg",
+      "relative_path": "assets/images/hero-3d-planung.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-3d-planung.jpg",
+      "target_webp_relative_path": "assets/images/hero-3d-planung.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-3d-planung.webp",
+      "size_bytes": 521693
+    },
+    {
+      "filename": "hero-fliesen-ausstellung.jpg",
+      "stem": "hero-fliesen-ausstellung",
+      "extension": ".jpg",
+      "relative_path": "assets/images/hero-fliesen-ausstellung.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-fliesen-ausstellung.jpg",
+      "target_webp_relative_path": "assets/images/hero-fliesen-ausstellung.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-fliesen-ausstellung.webp",
+      "size_bytes": 1152086
+    },
+    {
+      "filename": "hero-marke-team.jpg",
+      "stem": "hero-marke-team",
+      "extension": ".jpg",
+      "relative_path": "assets/images/hero-marke-team.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-marke-team.jpg",
+      "target_webp_relative_path": "assets/images/hero-marke-team.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-marke-team.webp",
+      "size_bytes": 1749933
+    },
+    {
+      "filename": "hero-naturstein.jpg",
+      "stem": "hero-naturstein",
+      "extension": ".jpg",
+      "relative_path": "assets/images/hero-naturstein.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-naturstein.jpg",
+      "target_webp_relative_path": "assets/images/hero-naturstein.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-naturstein.webp",
+      "size_bytes": 2311535
+    },
+    {
+      "filename": "hero-raeume-erzaehlen.jpg",
+      "stem": "hero-raeume-erzaehlen",
+      "extension": ".jpg",
+      "relative_path": "assets/images/hero-raeume-erzaehlen.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-raeume-erzaehlen.jpg",
+      "target_webp_relative_path": "assets/images/hero-raeume-erzaehlen.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/hero-raeume-erzaehlen.webp",
+      "size_bytes": 267120
+    },
+    {
+      "filename": "insp-bad-natur.jpg",
+      "stem": "insp-bad-natur",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-bad-natur.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-bad-natur.jpg",
+      "target_webp_relative_path": "assets/images/insp-bad-natur.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-bad-natur.webp",
+      "size_bytes": 149925
+    },
+    {
+      "filename": "insp-bad-walkin.jpg",
+      "stem": "insp-bad-walkin",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-bad-walkin.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-bad-walkin.jpg",
+      "target_webp_relative_path": "assets/images/insp-bad-walkin.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-bad-walkin.webp",
+      "size_bytes": 100450
+    },
+    {
+      "filename": "insp-bad-wanne.jpg",
+      "stem": "insp-bad-wanne",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-bad-wanne.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-bad-wanne.jpg",
+      "target_webp_relative_path": "assets/images/insp-bad-wanne.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-bad-wanne.webp",
+      "size_bytes": 163360
+    },
+    {
+      "filename": "insp-kueche-bar.jpg",
+      "stem": "insp-kueche-bar",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-kueche-bar.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-kueche-bar.jpg",
+      "target_webp_relative_path": "assets/images/insp-kueche-bar.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-kueche-bar.webp",
+      "size_bytes": 109203
+    },
+    {
+      "filename": "insp-kueche-insel.jpg",
+      "stem": "insp-kueche-insel",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-kueche-insel.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-kueche-insel.jpg",
+      "target_webp_relative_path": "assets/images/insp-kueche-insel.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-kueche-insel.webp",
+      "size_bytes": 256059
+    },
+    {
+      "filename": "insp-outdoor-anthrazit.jpg",
+      "stem": "insp-outdoor-anthrazit",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-outdoor-anthrazit.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-outdoor-anthrazit.jpg",
+      "target_webp_relative_path": "assets/images/insp-outdoor-anthrazit.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-outdoor-anthrazit.webp",
+      "size_bytes": 217437
+    },
+    {
+      "filename": "insp-outdoor-garten.jpg",
+      "stem": "insp-outdoor-garten",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-outdoor-garten.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-outdoor-garten.jpg",
+      "target_webp_relative_path": "assets/images/insp-outdoor-garten.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-outdoor-garten.webp",
+      "size_bytes": 290668
+    },
+    {
+      "filename": "insp-outdoor-holz.jpg",
+      "stem": "insp-outdoor-holz",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-outdoor-holz.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-outdoor-holz.jpg",
+      "target_webp_relative_path": "assets/images/insp-outdoor-holz.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-outdoor-holz.webp",
+      "size_bytes": 238624
+    },
+    {
+      "filename": "insp-schlafen.jpg",
+      "stem": "insp-schlafen",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-schlafen.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-schlafen.jpg",
+      "target_webp_relative_path": "assets/images/insp-schlafen.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-schlafen.webp",
+      "size_bytes": 108765
+    },
+    {
+      "filename": "insp-wohnen-gruen.jpg",
+      "stem": "insp-wohnen-gruen",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-wohnen-gruen.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-gruen.jpg",
+      "target_webp_relative_path": "assets/images/insp-wohnen-gruen.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-gruen.webp",
+      "size_bytes": 122293
+    },
+    {
+      "filename": "insp-wohnen-licht.jpg",
+      "stem": "insp-wohnen-licht",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-wohnen-licht.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-licht.jpg",
+      "target_webp_relative_path": "assets/images/insp-wohnen-licht.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-licht.webp",
+      "size_bytes": 166376
+    },
+    {
+      "filename": "insp-wohnen-lounge.jpg",
+      "stem": "insp-wohnen-lounge",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-wohnen-lounge.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-lounge.jpg",
+      "target_webp_relative_path": "assets/images/insp-wohnen-lounge.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-lounge.webp",
+      "size_bytes": 245037
+    },
+    {
+      "filename": "insp-wohnen-marmor.jpg",
+      "stem": "insp-wohnen-marmor",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-wohnen-marmor.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-marmor.jpg",
+      "target_webp_relative_path": "assets/images/insp-wohnen-marmor.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-marmor.webp",
+      "size_bytes": 166650
+    },
+    {
+      "filename": "insp-wohnen-modern.jpg",
+      "stem": "insp-wohnen-modern",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-wohnen-modern.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-modern.jpg",
+      "target_webp_relative_path": "assets/images/insp-wohnen-modern.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-modern.webp",
+      "size_bytes": 80080
+    },
+    {
+      "filename": "insp-wohnen-vinyl.jpg",
+      "stem": "insp-wohnen-vinyl",
+      "extension": ".jpg",
+      "relative_path": "assets/images/insp-wohnen-vinyl.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-vinyl.jpg",
+      "target_webp_relative_path": "assets/images/insp-wohnen-vinyl.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/insp-wohnen-vinyl.webp",
+      "size_bytes": 173891
+    },
+    {
+      "filename": "inspo-01-bad.jpg",
+      "stem": "inspo-01-bad",
+      "extension": ".jpg",
+      "relative_path": "assets/images/inspo-01-bad.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-01-bad.jpg",
+      "target_webp_relative_path": "assets/images/inspo-01-bad.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-01-bad.webp",
+      "size_bytes": 56721
+    },
+    {
+      "filename": "inspo-02-wohnen.jpg",
+      "stem": "inspo-02-wohnen",
+      "extension": ".jpg",
+      "relative_path": "assets/images/inspo-02-wohnen.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-02-wohnen.jpg",
+      "target_webp_relative_path": "assets/images/inspo-02-wohnen.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-02-wohnen.webp",
+      "size_bytes": 596444
+    },
+    {
+      "filename": "inspo-03-fliese.jpg",
+      "stem": "inspo-03-fliese",
+      "extension": ".jpg",
+      "relative_path": "assets/images/inspo-03-fliese.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-03-fliese.jpg",
+      "target_webp_relative_path": "assets/images/inspo-03-fliese.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-03-fliese.webp",
+      "size_bytes": 2850201
+    },
+    {
+      "filename": "inspo-04-detail.jpg",
+      "stem": "inspo-04-detail",
+      "extension": ".jpg",
+      "relative_path": "assets/images/inspo-04-detail.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-04-detail.jpg",
+      "target_webp_relative_path": "assets/images/inspo-04-detail.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-04-detail.webp",
+      "size_bytes": 694637
+    },
+    {
+      "filename": "inspo-05-langformat.jpg",
+      "stem": "inspo-05-langformat",
+      "extension": ".jpg",
+      "relative_path": "assets/images/inspo-05-langformat.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-05-langformat.jpg",
+      "target_webp_relative_path": "assets/images/inspo-05-langformat.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-05-langformat.webp",
+      "size_bytes": 473808
+    },
+    {
+      "filename": "inspo-06-keramik.jpg",
+      "stem": "inspo-06-keramik",
+      "extension": ".jpg",
+      "relative_path": "assets/images/inspo-06-keramik.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-06-keramik.jpg",
+      "target_webp_relative_path": "assets/images/inspo-06-keramik.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-06-keramik.webp",
+      "size_bytes": 943492
+    },
+    {
+      "filename": "inspo-07-news.jpg",
+      "stem": "inspo-07-news",
+      "extension": ".jpg",
+      "relative_path": "assets/images/inspo-07-news.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-07-news.jpg",
+      "target_webp_relative_path": "assets/images/inspo-07-news.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-07-news.webp",
+      "size_bytes": 4395577
+    },
+    {
+      "filename": "inspo-08-thinsation.jpg",
+      "stem": "inspo-08-thinsation",
+      "extension": ".jpg",
+      "relative_path": "assets/images/inspo-08-thinsation.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-08-thinsation.jpg",
+      "target_webp_relative_path": "assets/images/inspo-08-thinsation.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/inspo-08-thinsation.webp",
+      "size_bytes": 244008
+    },
+    {
+      "filename": "service-3d-badplanung.jpg",
+      "stem": "service-3d-badplanung",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-3d-badplanung.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-3d-badplanung.jpg",
+      "target_webp_relative_path": "assets/images/service-3d-badplanung.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-3d-badplanung.webp",
+      "size_bytes": 239406
+    },
+    {
+      "filename": "service-3d.jpg",
+      "stem": "service-3d",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-3d.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-3d.jpg",
+      "target_webp_relative_path": "assets/images/service-3d.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-3d.webp",
+      "size_bytes": 3976139
+    },
+    {
+      "filename": "service-bemusterung-od.jpg",
+      "stem": "service-bemusterung-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-bemusterung-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-bemusterung-od.jpg",
+      "target_webp_relative_path": "assets/images/service-bemusterung-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-bemusterung-od.webp",
+      "size_bytes": 205020
+    },
+    {
+      "filename": "service-bemusterung.jpg",
+      "stem": "service-bemusterung",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-bemusterung.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-bemusterung.jpg",
+      "target_webp_relative_path": "assets/images/service-bemusterung.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-bemusterung.webp",
+      "size_bytes": 114919
+    },
+    {
+      "filename": "service-beratung-od.jpg",
+      "stem": "service-beratung-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-beratung-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-beratung-od.jpg",
+      "target_webp_relative_path": "assets/images/service-beratung-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-beratung-od.webp",
+      "size_bytes": 166482
+    },
+    {
+      "filename": "service-beratung.jpg",
+      "stem": "service-beratung",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-beratung.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-beratung.jpg",
+      "target_webp_relative_path": "assets/images/service-beratung.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-beratung.webp",
+      "size_bytes": 1630990
+    },
+    {
+      "filename": "service-hero-beratung-od.jpg",
+      "stem": "service-hero-beratung-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-hero-beratung-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-hero-beratung-od.jpg",
+      "target_webp_relative_path": "assets/images/service-hero-beratung-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-hero-beratung-od.webp",
+      "size_bytes": 168125
+    },
+    {
+      "filename": "service-lieferung-od.jpg",
+      "stem": "service-lieferung-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-lieferung-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-lieferung-od.jpg",
+      "target_webp_relative_path": "assets/images/service-lieferung-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-lieferung-od.webp",
+      "size_bytes": 272748
+    },
+    {
+      "filename": "service-lieferung.jpg",
+      "stem": "service-lieferung",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-lieferung.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-lieferung.jpg",
+      "target_webp_relative_path": "assets/images/service-lieferung.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-lieferung.webp",
+      "size_bytes": 135110
+    },
+    {
+      "filename": "service-reinigung-od.jpg",
+      "stem": "service-reinigung-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/service-reinigung-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-reinigung-od.jpg",
+      "target_webp_relative_path": "assets/images/service-reinigung-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/service-reinigung-od.webp",
+      "size_bytes": 154524
+    },
+    {
+      "filename": "sortiment-fliesen.jpg",
+      "stem": "sortiment-fliesen",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-fliesen.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-fliesen.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-fliesen.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-fliesen.webp",
+      "size_bytes": 190888
+    },
+    {
+      "filename": "sortiment-hero-od.jpg",
+      "stem": "sortiment-hero-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-hero-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-hero-od.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-hero-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-hero-od.webp",
+      "size_bytes": 327076
+    },
+    {
+      "filename": "sortiment-holz.jpg",
+      "stem": "sortiment-holz",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-holz.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-holz.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-holz.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-holz.webp",
+      "size_bytes": 632769
+    },
+    {
+      "filename": "sortiment-naturstein-od.jpg",
+      "stem": "sortiment-naturstein-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-naturstein-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-naturstein-od.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-naturstein-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-naturstein-od.webp",
+      "size_bytes": 369215
+    },
+    {
+      "filename": "sortiment-naturstein.jpg",
+      "stem": "sortiment-naturstein",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-naturstein.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-naturstein.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-naturstein.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-naturstein.webp",
+      "size_bytes": 358073
+    },
+    {
+      "filename": "sortiment-parkett-od.jpg",
+      "stem": "sortiment-parkett-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-parkett-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-parkett-od.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-parkett-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-parkett-od.webp",
+      "size_bytes": 298194
+    },
+    {
+      "filename": "sortiment-terrasse-balkon.jpg",
+      "stem": "sortiment-terrasse-balkon",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-terrasse-balkon.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-terrasse-balkon.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-terrasse-balkon.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-terrasse-balkon.webp",
+      "size_bytes": 313407
+    },
+    {
+      "filename": "sortiment-terrasse.jpg",
+      "stem": "sortiment-terrasse",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-terrasse.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-terrasse.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-terrasse.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-terrasse.webp",
+      "size_bytes": 580283
+    },
+    {
+      "filename": "sortiment-vinyl-od.jpg",
+      "stem": "sortiment-vinyl-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-vinyl-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-vinyl-od.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-vinyl-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-vinyl-od.webp",
+      "size_bytes": 211753
+    },
+    {
+      "filename": "sortiment-vinyl.jpg",
+      "stem": "sortiment-vinyl",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-vinyl.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-vinyl.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-vinyl.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-vinyl.webp",
+      "size_bytes": 66356
+    },
+    {
+      "filename": "sortiment-wand-bodenfliesen.jpg",
+      "stem": "sortiment-wand-bodenfliesen",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-wand-bodenfliesen.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-wand-bodenfliesen.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-wand-bodenfliesen.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-wand-bodenfliesen.webp",
+      "size_bytes": 137974
+    },
+    {
+      "filename": "sortiment-wandverkleidung-od.jpg",
+      "stem": "sortiment-wandverkleidung-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-wandverkleidung-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-wandverkleidung-od.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-wandverkleidung-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-wandverkleidung-od.webp",
+      "size_bytes": 34016
+    },
+    {
+      "filename": "sortiment-wandverkleidung.jpg",
+      "stem": "sortiment-wandverkleidung",
+      "extension": ".jpg",
+      "relative_path": "assets/images/sortiment-wandverkleidung.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-wandverkleidung.jpg",
+      "target_webp_relative_path": "assets/images/sortiment-wandverkleidung.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/sortiment-wandverkleidung.webp",
+      "size_bytes": 959043
+    },
+    {
+      "filename": "team-alexander-ulrich.jpg",
+      "stem": "team-alexander-ulrich",
+      "extension": ".jpg",
+      "relative_path": "assets/images/team/team-alexander-ulrich.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-alexander-ulrich.jpg",
+      "target_webp_relative_path": "assets/images/team/team-alexander-ulrich.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-alexander-ulrich.webp",
+      "size_bytes": 51361
+    },
+    {
+      "filename": "team-axel-finkbeiner.png",
+      "stem": "team-axel-finkbeiner",
+      "extension": ".png",
+      "relative_path": "assets/images/team/team-axel-finkbeiner.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-axel-finkbeiner.png",
+      "target_webp_relative_path": "assets/images/team/team-axel-finkbeiner.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-axel-finkbeiner.webp",
+      "size_bytes": 463755
+    },
+    {
+      "filename": "team-cristiano-cabrera.png",
+      "stem": "team-cristiano-cabrera",
+      "extension": ".png",
+      "relative_path": "assets/images/team/team-cristiano-cabrera.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-cristiano-cabrera.png",
+      "target_webp_relative_path": "assets/images/team/team-cristiano-cabrera.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-cristiano-cabrera.webp",
+      "size_bytes": 388581
+    },
+    {
+      "filename": "team-elke-cabrera.png",
+      "stem": "team-elke-cabrera",
+      "extension": ".png",
+      "relative_path": "assets/images/team/team-elke-cabrera.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-elke-cabrera.png",
+      "target_webp_relative_path": "assets/images/team/team-elke-cabrera.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-elke-cabrera.webp",
+      "size_bytes": 481569
+    },
+    {
+      "filename": "team-joerg-koziolek.png",
+      "stem": "team-joerg-koziolek",
+      "extension": ".png",
+      "relative_path": "assets/images/team/team-joerg-koziolek.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-joerg-koziolek.png",
+      "target_webp_relative_path": "assets/images/team/team-joerg-koziolek.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-joerg-koziolek.webp",
+      "size_bytes": 484583
+    },
+    {
+      "filename": "team-julia-rodenberg.png",
+      "stem": "team-julia-rodenberg",
+      "extension": ".png",
+      "relative_path": "assets/images/team/team-julia-rodenberg.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-julia-rodenberg.png",
+      "target_webp_relative_path": "assets/images/team/team-julia-rodenberg.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-julia-rodenberg.webp",
+      "size_bytes": 536781
+    },
+    {
+      "filename": "team-michaela-kraft.png",
+      "stem": "team-michaela-kraft",
+      "extension": ".png",
+      "relative_path": "assets/images/team/team-michaela-kraft.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-michaela-kraft.png",
+      "target_webp_relative_path": "assets/images/team/team-michaela-kraft.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-michaela-kraft.webp",
+      "size_bytes": 441161
+    },
+    {
+      "filename": "team-peter-kraft.png",
+      "stem": "team-peter-kraft",
+      "extension": ".png",
+      "relative_path": "assets/images/team/team-peter-kraft.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-peter-kraft.png",
+      "target_webp_relative_path": "assets/images/team/team-peter-kraft.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-peter-kraft.webp",
+      "size_bytes": 560383
+    },
+    {
+      "filename": "team-tim-kraft.png",
+      "stem": "team-tim-kraft",
+      "extension": ".png",
+      "relative_path": "assets/images/team/team-tim-kraft.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-tim-kraft.png",
+      "target_webp_relative_path": "assets/images/team/team-tim-kraft.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/team/team-tim-kraft.webp",
+      "size_bytes": 441699
+    },
+    {
+      "filename": "warum-gruppenbild-od.jpg",
+      "stem": "warum-gruppenbild-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/warum-gruppenbild-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/warum-gruppenbild-od.jpg",
+      "target_webp_relative_path": "assets/images/warum-gruppenbild-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/warum-gruppenbild-od.webp",
+      "size_bytes": 165821
+    },
+    {
+      "filename": "werte-faire-preise-od.jpg",
+      "stem": "werte-faire-preise-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/werte-faire-preise-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/werte-faire-preise-od.jpg",
+      "target_webp_relative_path": "assets/images/werte-faire-preise-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/werte-faire-preise-od.webp",
+      "size_bytes": 173891
+    },
+    {
+      "filename": "werte-nachhaltigkeit-od.jpg",
+      "stem": "werte-nachhaltigkeit-od",
+      "extension": ".jpg",
+      "relative_path": "assets/images/werte-nachhaltigkeit-od.jpg",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/werte-nachhaltigkeit-od.jpg",
+      "target_webp_relative_path": "assets/images/werte-nachhaltigkeit-od.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/assets/images/werte-nachhaltigkeit-od.webp",
+      "size_bytes": 245451
+    },
+    {
+      "filename": "favicon-192x192.png",
+      "stem": "favicon-192x192",
+      "extension": ".png",
+      "relative_path": "favicon-192x192.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/favicon-192x192.png",
+      "target_webp_relative_path": "favicon-192x192.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/favicon-192x192.webp",
+      "size_bytes": 10381
+    },
+    {
+      "filename": "favicon-32x32.png",
+      "stem": "favicon-32x32",
+      "extension": ".png",
+      "relative_path": "favicon-32x32.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/favicon-32x32.png",
+      "target_webp_relative_path": "favicon-32x32.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/favicon-32x32.webp",
+      "size_bytes": 1139
+    },
+    {
+      "filename": "kf_logo.png",
+      "stem": "kf_logo",
+      "extension": ".png",
+      "relative_path": "kf_logo.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/kf_logo.png",
+      "target_webp_relative_path": "kf_logo.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/kf_logo.webp",
+      "size_bytes": 69643
+    },
+    {
+      "filename": "kf_white.png",
+      "stem": "kf_white",
+      "extension": ".png",
+      "relative_path": "kf_white.png",
+      "absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/kf_white.png",
+      "target_webp_relative_path": "kf_white.webp",
+      "target_webp_absolute_path": "/Users/atlas/Documents/Github/Kraft-Fliese-Startpage-Redesign/V62/kf_white.webp",
+      "size_bytes": 94845
+    }
+  ]
+}
